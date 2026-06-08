@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Em Allen — Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    color: #1d1d1f;
+    background: #f5f5f7;
+  }
+
+  .page {
+    max-width: 820px;
+    margin: 32px auto;
+    padding: 52px 52px 64px;
+    background: white;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+  }
+
+  .name {
+    font-size: 26pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 3px;
+    color: #1d1d1f;
+  }
+
+  .pronouns {
+    font-size: 9.5pt;
+    color: #6e6e73;
+    margin-bottom: 4px;
+    font-style: italic;
+  }
+
+  .contact {
+    font-size: 9.5pt;
+    color: #6e6e73;
+    margin-bottom: 6px;
+  }
+
+  .contact a {
+    color: #0071e3;
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  .headline {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #1d1d1f;
+    letter-spacing: 0.3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #d2d2d7;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #6e6e73;
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 4px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
+
+  .summary p {
+    font-size: 10.5pt;
+    line-height: 1.65;
+    margin-bottom: 9px;
+    color: #1d1d1f;
+  }
+
+  .competencies {
+    font-size: 9.5pt;
+    color: #1d1d1f;
+    line-height: 1.8;
+  }
+
+  .job {
+    margin-bottom: 4px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-left: -12px;
+    margin-right: -12px;
+    transition: background 0.15s ease;
+  }
+
+  .job:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .job:hover {
+    background: #fafafa;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+
+  .job-title {
+    font-weight: 700;
+    font-size: 10.5pt;
+    color: #1d1d1f;
+  }
+
+  .job-date {
+    font-size: 9pt;
+    color: #6e6e73;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-left: 14px;
+  }
+
+  .job-org {
+    font-size: 9.5pt;
+    color: #6e6e73;
+    margin-bottom: 3px;
+  }
+
+  .job-context {
+    font-size: 9.5pt;
+    font-style: italic;
+    color: #6e6e73;
+    margin-bottom: 7px;
+    line-height: 1.5;
+  }
+
+  ul {
+    padding-left: 16px;
+  }
+
+  li {
+    font-size: 10pt;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #1d1d1f;
+  }
+
+  .comp-map {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+    margin-top: 4px;
+  }
+
+  .comp-map th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    color: #6e6e73;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 5px 12px 5px 0;
+    border-bottom: 1px solid #d2d2d7;
+  }
+
+  .comp-map td {
+    padding: 7px 0 7px 0;
+    vertical-align: top;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.45;
+  }
+
+  .comp-map td:first-child {
+    font-weight: 600;
+    color: #1d1d1f;
+    width: 30%;
+    padding-right: 18px;
+  }
+
+  .comp-map td:last-child {
+    color: #6e6e73;
+    font-size: 9pt;
+  }
+
+  .edu-line {
+    font-size: 10pt;
+    margin-bottom: 4px;
+    color: #1d1d1f;
+  }
+
+  .certs {
+    font-size: 9.5pt;
+    color: #6e6e73;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
+
+  .footer {
+    margin-top: 36px;
+    font-size: 8pt;
+    color: #86868b;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 14px;
+  }
+
+  @media print {
+    body { background: white; }
+    .page {
+      margin: 0;
+      padding: 24px 32px 36px;
+      border: none;
+      border-radius: 0;
+    }
+    .job { padding: 0; margin-left: 0; margin-right: 0; }
+    .footer { display: none; }
+    @page { margin: 0.5in; size: letter; }
+  }
+
+  @media (max-width: 640px) {
+    body { background: white; }
+    .page { padding: 28px 22px 44px; margin: 0; border-radius: 0; border-left: none; border-right: none; }
+    .job { margin-left: -8px; margin-right: -8px; padding: 8px; }
+    .job-header { flex-direction: column; }
+    .job-date { margin-left: 0; margin-top: 1px; }
+    .comp-map { font-size: 9pt; }
+    .comp-map td:first-child { width: auto; display: block; padding-right: 0; padding-bottom: 2px; }
+    .comp-map td:last-child { display: block; padding-top: 0; }
+    .comp-map tr { display: block; margin-bottom: 8px; border-bottom: 1px solid #f0f0f0; padding-bottom: 6px; }
+    .comp-map th { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="name">EM ALLEN</div>
+  <div class="pronouns">they / them</div>
+  <div class="contact">
+    Portland, OR &nbsp;&middot;&nbsp;
+    <a href="mailto:em.allen22@icloud.com">em.allen22@icloud.com</a> &nbsp;&middot;&nbsp;
+    901-828-9811 &nbsp;&middot;&nbsp;
+    <a href="https://linkedin.com/in/em-allen-13b0a768">linkedin.com/in/em-allen-13b0a768</a>
+  </div>
+  <div class="headline">Senior Program Manager &nbsp;&middot;&nbsp; Enablement Design &nbsp;&middot;&nbsp; Knowledge Systems &nbsp;&middot;&nbsp; AI Operations</div>
+
+  <div class="section-title">Summary</div>
+  <div class="summary">
+    <p>I once found six disconnected knowledge repositories at Apple that every engineering team was actively searching for, and not one person knew all six existed. I didn't just catalog them: I built the governance, the taxonomy, the stakeholder alignment across Legal, MarCom, Engineering, and Corporate L&amp;D, and delivered a 10-minute executive briefing that converted a self-initiated discovery into a funded, cross-functional initiative. Blank page to named owners and funded pilot, under six months, with no positional authority.</p>
+    <p>That pattern runs through everything I build. The same instinct I used to coach leaders is the one I use to design systems: what's actually broken, not what people report is broken. And I build everything for handoff from day one, because the best work is the kind that outlives you.</p>
+    <p>12 years at Apple. The roles have shifted; the pattern hasn't: find what's actually broken, build the thing that fixes it, and make sure it runs after you leave.</p>
+  </div>
+
+  <div class="section-title">Core Competencies</div>
+  <div class="competencies">
+    Program Management &nbsp;&middot;&nbsp; Enablement &amp; Curriculum Design &nbsp;&middot;&nbsp; Knowledge Management &amp; Governance &nbsp;&middot;&nbsp; Diagnostic Coaching &nbsp;&middot;&nbsp; AI-Native Workflow Design &nbsp;&middot;&nbsp; Agentic AI Tool Implementation &nbsp;&middot;&nbsp; Stakeholder Alignment Without Authority &nbsp;&middot;&nbsp; Cross-Functional Program Leadership &nbsp;&middot;&nbsp; Large-Scale Facilitation (50&ndash;200 participants) &nbsp;&middot;&nbsp; Adult Learning Principles &nbsp;&middot;&nbsp; Change Management &nbsp;&middot;&nbsp; Measurement Frameworks &amp; KPIs &nbsp;&middot;&nbsp; Executive Communication
+  </div>
+
+  <div class="section-title">Professional Experience</div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Packaging Engineering Program Manager &nbsp;|&nbsp; Corporate Rotation</span>
+      <span class="job-date">January 2026 &ndash; June 2026</span>
+    </div>
+    <div class="job-org">Apple &nbsp;&middot;&nbsp; Cupertino, CA (Remote, Portland OR)</div>
+    <div class="job-context">Competitive 6-month corporate rotation: stakeholder alignment, cross-functional program leadership, AI-augmented operations, and 0-to-1 knowledge systems design.</div>
+    <ul>
+      <li>Identified six disconnected knowledge repositories no single team had mapped. Built the governance model from scratch: unified location taxonomy, documentation standards, and cross-functional ownership structure. Aligned Legal, MarCom, Engineering, and Apple University across competing priorities and delivered a 10-minute executive briefing that converted a self-initiated discovery into a funded pilot with named owners and a scope designed to outlast my rotation. Blank page to funded in under six months.</li>
+      <li>Managed 5+ concurrent new product introduction programs from design review through manufacturing launch: 20+ stakeholders, multiple countries, multiple time zones, no positional authority; every decision moved because I built the visibility and trust that made accountability the easier choice</li>
+      <li>Built a live program visibility dashboard replacing weekly static Keynote decks: multi-tab, filterable, with automated accountability gap surfacing, group-by-LOB, and CSV export; adopted by a 20-person global team as their primary status tool</li>
+      <li>Built the AI workflow layer most people skip: voice memo to formatted meeting notes in under 5 minutes, via a custom-built MCP server with persistent context across every program. The system compounds: the longer it runs, the more accurate and specific it gets.</li>
+      <li>Built a text-expansion system converting 342 keystrokes into 55,000+ characters of structured PM output: status updates, stakeholder emails, meeting agendas, follow-ups. In daily active use.</li>
+      <li>Caught build readiness blockers before they hit manufacturing windows. Asked why, not just what. Closed action items that had been sitting open for months.</li>
+      <li>Completed Apple Enterprise AI Fluency (May 2026): advanced AI implementation training including governance and guardrails for enterprise environments, and Claude Code</li>
+      <li>Designed AI onboarding curriculum for non-technical employees (May 2026): 5-document package built on adult learning theory, instructional design scaffolding, accessibility standards for neurodivergent and aging-adult learners, and scrum methodology; audited own first draft, identified 7 structural gaps, rebuilt — a complete instructional design cycle, portfolio-ready</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Apple Genius (Senior Certified Technician, Mac &amp; iOS)</span>
+      <span class="job-date">November 2024 &ndash; Present</span>
+    </div>
+    <div class="job-org">Apple Retail, Bridgeport Village &nbsp;&middot;&nbsp; Portland, OR</div>
+    <ul>
+      <li>After six years in Genius Bar management, took a deliberate break, then returned to Apple in a technical role by choice. Competed for and won the January 2026 corporate engineering rotation within the first year back.</li>
+      <li>Primary coaching and diagnostic resource across the store; recognized as operating above title while building toward the corporate track</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Manager, Genius Bar</span>
+      <span class="job-date">August 2018 &ndash; June 2024</span>
+    </div>
+    <div class="job-org">Apple Retail, Bridgeport Village &nbsp;&middot;&nbsp; Portland, OR</div>
+    <ul>
+      <li>Led a 100+ person team at an Apple training store for six years: not individual contributors, leaders. Developing them was the primary job. Ranked top 5 of 30 stores in the Portland market, sustained over six years.</li>
+      <li>Identified that 1 in 20 team members was proactively connecting customers with Apple's small business services, a behavior problem, not a knowledge problem. Built a three-part system: coached managers on how to coach their teams, paired top performers with struggling peers as mentors, and reframed the why from obligation to customer impact. Tracked at 30, 60, and 90 days: 1 in 20 to 1 in 10. Not a new program: a culture shift.</li>
+      <li>Designed every training curriculum for handoff from day one. Every program outlived my tenure, kept running under new leadership, and ran without me. That was always the goal.</li>
+      <li>Created Same Unit Repair Bingo: a gamified competency diagnostic that surfaced skill gaps and changed behavior without a single lecture. Trained the facilitator and walked away.</li>
+      <li>Operated as diagnostic coach for emerging leaders: identified whether someone was stuck in process, stuck in confidence, or working from the wrong frame entirely, then designed the intervention for that specific gap. Multiple people on the team moved into expanded roles during or after my tenure. Same diagnostic instinct I now apply to systems.</li>
+      <li>Facilitated leadership cohorts, new hire onboarding, and certification programs for 50 to 200 participants; adapted delivery in real time based on where people were actually stuck</li>
+      <li>Received the Ovation Award (approximately 2 recipients per category, twice yearly) for NPS results driven by leadership culture, diagnostic coaching, and sustained operational quality</li>
+      <li>Quadrupled Today at Apple attendance over two consecutive quarters through targeted programming and team coaching alignment</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Apple Store Leader Program</span>
+      <span class="job-date">August 2016 &ndash; August 2018</span>
+    </div>
+    <div class="job-org">Apple &nbsp;&middot;&nbsp; Portland, OR</div>
+    <ul>
+      <li>Completed Apple's selective 2-year cross-departmental leadership development program rotating through sales, technical support, business development, and operations. I was the target population for programs like this one, which means I know what works from the inside, not just from the data.</li>
+      <li>Selected as interim operations lead at a second Portland store: stepped in with no handoff and no context, and exceeded all benchmarks</li>
+      <li>Recruited by store management to support team development initiatives during ASLP; built knowledge-sharing relationships with training specialists at peer locations, recognized as a development resource before holding formal management title</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Expert &amp; Specialist</span>
+      <span class="job-date">July 2014 &ndash; August 2016</span>
+    </div>
+    <div class="job-org">Apple Retail &nbsp;&middot;&nbsp; Portland, OR</div>
+    <ul>
+      <li>Deep-level technical diagnosis and customer problem resolution; mentored Specialists through complex scenarios; earned Apple certifications across service, repair, and customer experience; selected for ASLP</li>
+      <li>Completed Apple's In-Store Guest Trainer program: one week of intensive adult learning theory followed by a nine-month residency designing and delivering onboarding for every role from new hire to senior technician. The foundation of everything I do in L&amp;D.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Head Coach &amp; Program Manager</span>
+      <span class="job-date">2015 &ndash; 2016</span>
+    </div>
+    <div class="job-org">Lincoln High School Lacrosse &nbsp;&middot;&nbsp; Portland, OR</div>
+    <ul>
+      <li>Built a coaching curriculum and a player-to-coach pipeline; left with a program that ran itself and a successor ready to lead it</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Inclusion &amp; Diversity Leadership</div>
+  <ul>
+    <li>Founded and led Women @ Apple as its first retail volunteer lead; directly accelerated Pride @ Apple's retail chapter launch and was selected as a founding lead within 9 months</li>
+    <li>Escalated a single piece of feedback on a company-wide product announcement; changed the rollout strategy and turned a clinical release into a celebratory company moment</li>
+  </ul>
+
+  <div class="section-title">Education &amp; Credentials</div>
+  <div class="edu-line"><strong>B.A. Classical Civilization, Honors</strong> &nbsp;&middot;&nbsp; University of Vermont &nbsp;&middot;&nbsp; NCAA Division I Varsity Lacrosse</div>
+  <div class="certs">Agile Certified &nbsp;&middot;&nbsp; Apple Enterprise AI Fluency (Claude Code) &nbsp;&middot;&nbsp; In-Store Guest Trainer (Adult Learning Principles) &nbsp;&middot;&nbsp; Spanish (conversational fluency, in progress)</div>
+
+  <div class="section-title">How I Map to Roles</div>
+  <table class="comp-map">
+    <tr>
+      <th>What the role needs</th>
+      <th>Where this resume answers it</th>
+    </tr>
+    <tr>
+      <td>Ambiguity to structured plan</td>
+      <td>Archive initiative (corporate rotation, blank page to funded); 90-day behavior change program (Genius Bar); interim ops lead with zero handoff (ASLP)</td>
+    </tr>
+    <tr>
+      <td>Enablement / program design</td>
+      <td>Apple@Work curricula (both outlived tenure); Same Unit Repair Bingo; In-Store Guest Trainer; 6-year Genius Bar leader development system</td>
+    </tr>
+    <tr>
+      <td>AI operations &amp; integration</td>
+      <td>Voice-to-doc pipeline (custom MCP server); Typinator workflow automation (342 keystrokes = 55,000+ chars); Apple Enterprise AI Fluency; live NPI dashboard with automated gap surfacing</td>
+    </tr>
+    <tr>
+      <td>Executive influence without authority</td>
+      <td>10-min briefing converting self-initiated work to funded initiative; Archive alignment across 6 XF teams with no title; product announcement rollout changed from a single piece of feedback</td>
+    </tr>
+    <tr>
+      <td>Data-informed iteration</td>
+      <td>90-day KPI tracking (1 in 20 to 1 in 10 referral volume in 90 days); automated accountability gap surfacing (dashboard); AI system with persistent context; every program built with feedback loops and handoff criteria</td>
+    </tr>
+    <tr>
+      <td>Multi-workstream program mgmt</td>
+      <td>5+ concurrent global NPI programs, 20+ stakeholders, multiple countries; Genius Bar: hiring, coaching, training, ops, and culture simultaneously for six years</td>
+    </tr>
+    <tr>
+      <td>Knowledge systems design</td>
+      <td>Archive: 6 repositories to unified taxonomy + governance + XF ownership; Apple@Work programs (designed for handoff, outlived tenure); AI operations layer built for team-wide adoption</td>
+    </tr>
+    <tr>
+      <td>Apple culture &amp; change leadership</td>
+      <td>12 years at Apple; ASLP alum (was the target population); corporate rotation driving change without positional authority; re-entered corporate pipeline by competing for rotation on own terms</td>
+    </tr>
+  </table>
+
+  <div class="footer">Em Allen &nbsp;&middot;&nbsp; Portland, OR &nbsp;&middot;&nbsp; em.allen22@icloud.com &nbsp;&middot;&nbsp; Updated May 2026</div>
+
+</div>
+</body>
+</html>
