@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Em Allen: Program Manager, L&D, and Org Effectiveness leader with 12 years at Apple. I find what's broken. I build the thing that fixes it. Available July 2026.">
-<meta property="og:title" content="Em Allen | Program Manager + L&D + Org Effectiveness">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="description" content="Em Allen: Enablement and L&D leader, Program Manager, and Org Effectiveness practitioner with 12 years at Apple. I find what's broken. I build the thing that fixes it. Available July 2026.">
+<meta property="og:title" content="Em Allen | Enablement &amp; L&amp;D Leader | Program Manager">
 <meta property="og:description" content="12 years at Apple. 3 programs, 30+ stakeholders, 6 systems built. 87/100 TMS. Available July 2026.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="photo.jpg">
@@ -12,33 +14,31 @@
 <title>Em Allen</title>
 <style>
   :root {
-    --bg: #070b14;
-    --surface: #111827;
-    --border: rgba(255,255,255,0.18);
-    --divider: rgba(255,255,255,0.08);
-    --text: #f0f0f5;
-    --text-2: #a0a2bb;
-    --text-3: rgba(255,255,255,0.6);
+    --bg: #f5f5f7;
+    --surface: #ffffff;
+    --border: rgba(0,0,0,0.1);
+    --divider: rgba(0,0,0,0.06);
+    --text: #1d1d1f;
+    --text-2: #6e6e73;
+    --text-3: rgba(0,0,0,0.4);
     --blue: #0071e3;
-    --blue-lt: #60b0ff;
-    --orange: #FF6B35;
-    --purple: #BF5AF2;
-    --green: #30d158;
-    --teal: #32ade6;
-    --dark: #040710;
-    --dark-2: #0d1117;
-    --dark-border: rgba(255,255,255,0.08);
+    --blue-lt: #0066cc;
+    --orange: #d44b12;
+    --purple: #9b3ef0;
+    --green: #1a8a4a;
+    --teal: #0086c7;
+    --dark: #1d1d1f;
+    --dark-2: #2d2d2f;
+    --dark-border: rgba(255,255,255,0.1);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif;
-    background-color: #040710;
-    background: linear-gradient(135deg, #040710 0%, #070b14 45%, #0f172a 100%);
-    background-attachment: fixed;
+    background-color: #f5f5f7;
     color: var(--text);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
     overflow-x: hidden;
   }
@@ -48,10 +48,10 @@
     position: sticky;
     top: 0;
     z-index: 200;
-    background: rgba(7,11,20,0.88);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     transform: translateZ(0);
   }
 
@@ -75,7 +75,7 @@
 
   .tab-nav {
     display: flex;
-    background: rgba(255,255,255,0.07);
+    background: rgba(0,0,0,0.06);
     border-radius: 10px;
     padding: 3px;
     gap: 2px;
@@ -96,28 +96,29 @@
   }
 
   .tab-btn:hover { color: var(--text); }
-  .tab-btn:focus-visible { outline: 2px solid #7dd3fc; outline-offset: -2px; }
-  .nudge-btn:focus-visible { outline: 2px solid #7dd3fc; outline-offset: 3px; }
-  .chip:focus-visible { outline: 2px solid #7dd3fc; outline-offset: 2px; }
-  .job-card:focus-visible { outline: 2px solid rgba(125,211,252,0.6); outline-offset: 2px; border-radius: 16px; }
-  .phil-card:focus-visible { outline: 2px solid rgba(125,211,252,0.6); outline-offset: 2px; }
-  .site-name:focus-visible { outline: 2px solid #7dd3fc; outline-offset: 3px; border-radius: 4px; }
+  .tab-btn:focus-visible { outline: 2px solid #0071e3; outline-offset: -2px; }
+  .nudge-btn:focus-visible { outline: 2px solid #0071e3; outline-offset: 3px; }
+  .chip:focus-visible { outline: 2px solid #0071e3; outline-offset: 2px; }
+  .job-card:focus-visible { outline: 2px solid rgba(0,113,227,0.5); outline-offset: 2px; border-radius: 16px; }
+  .phil-card:focus-visible { outline: 2px solid rgba(0,113,227,0.5); outline-offset: 2px; }
+  .site-name:focus-visible { outline: 2px solid #0071e3; outline-offset: 3px; border-radius: 4px; }
 
   .tab-btn.active {
-    background: rgba(255,255,255,0.12);
-    color: var(--text);
+    background: #ffffff;
+    color: #1d1d1f;
     font-weight: 600;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.08);
   }
 
   /* ── HERO ── */
   .hero {
     background:
-      radial-gradient(ellipse at 18% 35%, rgba(0,113,227,0.12) 0%, transparent 55%),
-      radial-gradient(ellipse at 78% 75%, rgba(139,92,246,0.09) 0%, transparent 50%),
-      linear-gradient(135deg, #040710 0%, #070b14 50%, #0d1525 100%);
+      radial-gradient(ellipse at 15% 0%, rgba(0,113,227,0.07) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 0%, rgba(139,92,246,0.06) 0%, transparent 50%),
+      #ffffff;
     padding: 72px 32px 56px;
     position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
   }
 
   .hero-inner { max-width: 1020px; margin: 0 auto; }
@@ -138,7 +139,7 @@
 
   .hero-sub {
     font-size: 16px;
-    color: rgba(255,255,255,0.72);
+    color: #6e6e73;
     margin-bottom: 0;
     letter-spacing: 0.3px;
   }
@@ -146,7 +147,7 @@
   .hero-line {
     font-size: clamp(18px, 2.8vw, 26px);
     font-weight: 400;
-    color: #a1a1b0;
+    color: #494950;
     line-height: 1.45;
     max-width: 560px;
     margin-bottom: 52px;
@@ -164,16 +165,16 @@
 
   .header-contact {
     font-size: 12px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,0.45);
     text-decoration: none;
     font-weight: 500;
     padding: 6px 14px;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(0,0,0,0.15);
     border-radius: 20px;
     transition: color 0.15s, border-color 0.15s;
     white-space: nowrap;
   }
-  .header-contact:hover { color: #60d0ff; border-color: rgba(96,208,255,0.4); }
+  .header-contact:hover { color: #0071e3; border-color: rgba(0,113,227,0.4); }
   @media (max-width: 780px) { .header-contact { display: none; } }
 
   /* ── HERO PHOTO ── */
@@ -188,7 +189,8 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: 85% center;
-    border: 3px solid rgba(255,255,255,0.18);
+    border: 3px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
     display: block;
   }
   @media (max-width: 860px) {
@@ -210,11 +212,12 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     position: relative;
     overflow: hidden;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
 
-  .phil-card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+  .phil-card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
   .phil-card:active { transform: translateY(-1px) scale(1.00); }
 
   .phil-card::before {
@@ -233,7 +236,7 @@
   .phil-card-num {
     font-size: 56px;
     font-weight: 800;
-    color: rgba(255,255,255,0.05);
+    color: rgba(0,0,0,0.05);
     position: absolute;
     top: -8px;
     right: 12px;
@@ -250,19 +253,19 @@
     margin-bottom: 5px;
   }
 
-  .phil-card[data-color="blue"]   .phil-label { color: #60a5fa; }
-  .phil-card[data-color="orange"] .phil-label { color: #fb923c; }
-  .phil-card[data-color="teal"]   .phil-label { color: #5dd8f0; }
-  .phil-card[data-color="green"]  .phil-label { color: #34d399; }
+  .phil-card[data-color="blue"]   .phil-label { color: #0071e3; }
+  .phil-card[data-color="orange"] .phil-label { color: #d44b12; }
+  .phil-card[data-color="teal"]   .phil-label { color: #0086c7; }
+  .phil-card[data-color="green"]  .phil-label { color: #1a8a4a; }
 
   .phil-title {
     font-size: 18px;
     font-weight: 700;
-    color: white;
+    color: #1d1d1f;
     margin-bottom: 7px;
   }
 
-  .phil-desc { font-size: 13.5px; color: rgba(255,255,255,0.62); line-height: 1.55; }
+  .phil-desc { font-size: 13.5px; color: #6e6e73; line-height: 1.55; }
 
   /* ── CONTENT ── */
   .content {
@@ -273,17 +276,17 @@
 
   /* ── TAB PANELS ── */
   .tab-panel { display: none; }
-  .tab-panel.active { display: block; animation: panelIn 0.22s ease both; }
-  .tab-panel.exiting { display: block; animation: panelOut 0.18s ease both; }
+  .tab-panel.active { display: block; animation: panelIn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .tab-panel.exiting { display: block; animation: panelOut 0.2s ease both; }
 
   @keyframes panelIn {
-    from { opacity: 0; transform: translateY(8px); }
+    from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes panelOut {
-    from { opacity: 1; }
-    to { opacity: 0; transform: translateY(-6px); }
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-8px); }
   }
 
   /* ── SECTION LABEL ── */
@@ -292,7 +295,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.6px;
-    color: rgba(255,255,255,0.4);
+    color: rgba(0,0,0,0.4);
     margin-bottom: 14px;
     margin-top: 44px;
     display: flex;
@@ -318,6 +321,7 @@
     border-radius: 16px;
     padding: 28px;
     margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
 
   .text-card p { font-size: 16px; line-height: 1.75; margin-bottom: 14px; color: var(--text); }
@@ -352,12 +356,12 @@
 
   .intro-tile-body { font-size: 15px; line-height: 1.65; color: var(--text); }
 
-  .intro-tile[data-color="blue"]   { border-top: 3px solid #60a5fa; }
-  .intro-tile[data-color="orange"] { border-top: 3px solid #fb923c; }
-  .intro-tile[data-color="teal"]   { border-top: 3px solid #5dd8f0; }
-  .intro-tile[data-color="blue"]   .intro-tile-label { color: #60a5fa; }
-  .intro-tile[data-color="orange"] .intro-tile-label { color: #fb923c; }
-  .intro-tile[data-color="teal"]   .intro-tile-label { color: #5dd8f0; }
+  .intro-tile[data-color="blue"]   { border-top: 3px solid #0071e3; }
+  .intro-tile[data-color="orange"] { border-top: 3px solid #d44b12; }
+  .intro-tile[data-color="teal"]   { border-top: 3px solid #0086c7; }
+  .intro-tile[data-color="blue"]   .intro-tile-label { color: #0071e3; }
+  .intro-tile[data-color="orange"] .intro-tile-label { color: #d44b12; }
+  .intro-tile[data-color="teal"]   .intro-tile-label { color: #0086c7; }
 
   .throughline-story { display: none; }
   .throughline-story.active { display: block; }
@@ -399,6 +403,26 @@
     transition: background 0.2s;
   }
   .carousel-dot.active { background: var(--blue); }
+
+  @media (min-width: 900px) {
+    .throughline-wrap {
+      display: flex;
+      gap: 20px;
+      align-items: stretch;
+    }
+    .throughline-wrap .throughline-story {
+      display: flex !important;
+      flex-direction: column;
+      flex: 1;
+    }
+    .throughline-wrap .throughline-story .intro-strip {
+      flex: 1;
+      margin-bottom: 0;
+    }
+    .throughline-wrap .throughline-nav {
+      display: none;
+    }
+  }
 
   /* ── COACHING FEATURE ── */
   .coaching-feature {
@@ -463,13 +487,13 @@
   .moment-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 20px;
     margin-bottom: 12px;
   }
 
   .moment-card {
     border-radius: 20px;
-    padding: 36px 32px;
+    padding: 40px 36px;
     position: relative;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -510,18 +534,18 @@
 
   .moment-body {
     font-size: 14.5px;
-    line-height: 1.85;
-    color: rgba(255,255,255,0.62);
-    margin-bottom: 20px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 24px;
   }
 
   .moment-kicker {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
-    color: rgba(255,255,255,0.9);
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 16px;
-    line-height: 1.5;
+    color: rgba(255,255,255,0.95);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 20px;
+    line-height: 1.45;
   }
 
   @media (max-width: 700px) {
@@ -545,14 +569,14 @@
   .stat-card:hover { transform: translateY(-2px); }
 
   .stat-card.light {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.04);
+    border: 1px solid rgba(0,0,0,0.08);
   }
 
   .stat-card.blue   { background: #0071e3; }
-  .stat-card.orange { background: #E8500A; }
-  .stat-card.purple { background: #8e44e8; }
-  .stat-card.teal   { background: #0096c7; }
+  .stat-card.orange { background: #d44b12; }
+  .stat-card.purple { background: #8944e8; }
+  .stat-card.teal   { background: #0077b6; }
 
   .stat-num {
     font-size: clamp(32px, 4vw, 48px);
@@ -562,7 +586,7 @@
     margin-bottom: 6px;
   }
 
-  .stat-card.light .stat-num { color: var(--blue-lt); }
+  .stat-card.light .stat-num { color: #0071e3; }
   .stat-card.blue .stat-num,
   .stat-card.orange .stat-num,
   .stat-card.purple .stat-num,
@@ -692,9 +716,10 @@
     cursor: pointer;
     transition: box-shadow 0.2s ease;
     border-left: 4px solid transparent;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
   }
 
-  .job-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+  .job-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
   .job-card[data-color="blue"]   { border-left-color: var(--blue); }
   .job-card[data-color="teal"]   { border-left-color: var(--teal); }
   .job-card[data-color="indigo"] { border-left-color: #5856d6; }
@@ -831,6 +856,7 @@
   .project-card[data-theme="typinator"] { background: linear-gradient(145deg, #1a0800 0%, #7a2800 100%); }
   .project-card[data-theme="curriculum"]{ background: linear-gradient(145deg, #021808 0%, #0a5c1e 100%); }
   .project-card[data-theme="ld"]        { background: linear-gradient(145deg, #1a0820 0%, #6a0f3a 100%); }
+  .project-card[data-theme="portfolio"] { background: linear-gradient(145deg, #0d0d1a 0%, #1a1060 100%); }
 
   /* Shimmer on hover */
   .project-card::before {
@@ -921,6 +947,18 @@
   .project-role-chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 10px; }
   .project-role-chips span { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 10px; padding: 3px 9px; }
 
+  .project-evidence {
+    margin: 10px 0 14px;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.06);
+    border-left: 3px solid rgba(255,255,255,0.25);
+    border-radius: 0 8px 8px 0;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.65;
+  }
+  .project-evidence strong { color: rgba(255,255,255,0.95); font-weight: 600; }
+
   /* ── APPROACH CARDS ── */
   .approach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
 
@@ -930,9 +968,24 @@
     border-radius: 16px;
     padding: 24px;
     transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
   }
 
-  .approach-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+  .approach-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+
+  .approach-card .story-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--blue);
+    margin-top: 14px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .approach-card:hover .story-hint { opacity: 1; }
 
   .approach-card:nth-child(1) { border-top: 3px solid var(--blue); }
   .approach-card:nth-child(2) { border-top: 3px solid var(--purple); }
@@ -944,6 +997,21 @@
   .approach-card:nth-child(2) .approach-label { color: var(--purple); }
   .approach-card:nth-child(3) .approach-label { color: var(--teal); }
   .approach-card:nth-child(4) .approach-label { color: var(--orange); }
+
+  .approach-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+  }
+  .approach-card:nth-child(1) .approach-icon { background: rgba(0,113,227,0.1); color: var(--blue); }
+  .approach-card:nth-child(2) .approach-icon { background: rgba(155,62,240,0.1); color: var(--purple); }
+  .approach-card:nth-child(3) .approach-icon { background: rgba(0,134,199,0.1); color: var(--teal); }
+  .approach-card:nth-child(4) .approach-icon { background: rgba(212,75,18,0.1); color: var(--orange); }
 
   .approach-card p { font-size: 14px; line-height: 1.7; color: var(--text); }
 
@@ -962,7 +1030,7 @@
     transition: all 0.2s;
   }
 
-  .pipeline:hover .pipeline-step { border-color: var(--blue); background: rgba(0,113,227,0.15); color: #60a5fa; }
+  .pipeline:hover .pipeline-step { border-color: var(--blue); background: rgba(0,113,227,0.08); color: #0066cc; }
 
   .pipeline-arrow { color: var(--text-3); font-size: 16px; flex-shrink: 0; transition: color 0.2s, transform 0.2s; }
   .pipeline:hover .pipeline-arrow { color: var(--blue); transform: scaleX(1.2); }
@@ -981,11 +1049,11 @@
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
   /* ── FOOTER ── */
-  .site-footer { background: var(--dark); padding: 28px 32px; text-align: center; font-size: 12px; color: #4a4a6a; }
+  .site-footer { background: #1d1d1f; padding: 28px 32px; text-align: center; font-size: 12px; color: #6e6e73; }
 
   /* ── SCROLL SIGNAL ── */
   @keyframes bounce { 0%, 100% { transform: translateY(0); } 55% { transform: translateY(6px); } }
-  .scroll-signal { margin-top: 32px; display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.22); font-size: 11px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; }
+  .scroll-signal { margin-top: 32px; display: flex; align-items: center; gap: 8px; color: rgba(0,0,0,0.25); font-size: 11px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; }
   .scroll-signal svg { animation: bounce 2.4s ease-in-out infinite; }
 
   /* ── FLOAT CONTACT ── */
@@ -998,8 +1066,8 @@
   @media (max-width: 780px) { .record-grid { grid-template-columns: 1fr; } }
 
   .tab-nudge { text-align: center; padding: 40px 0 16px; }
-  .nudge-btn { background: transparent; border: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.65); padding: 12px 28px; border-radius: 24px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; transition: border-color 0.2s, color 0.2s, background 0.2s; }
-  .nudge-btn:hover { border-color: rgba(255,255,255,0.5); color: white; background: rgba(255,255,255,0.07); }
+  .nudge-btn { background: transparent; border: 1px solid rgba(0,0,0,0.18); color: rgba(0,0,0,0.55); padding: 12px 28px; border-radius: 24px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+  .nudge-btn:hover { border-color: rgba(0,0,0,0.35); color: #1d1d1f; background: rgba(0,0,0,0.04); }
 
   /* ── HERO STATS ── */
   .hero-stats {
@@ -1022,7 +1090,7 @@
     font-size: clamp(36px, 5vw, 52px);
     font-weight: 800;
     letter-spacing: -2px;
-    background: linear-gradient(90deg, #60b0ff 0%, #a78bfa 100%);
+    background: linear-gradient(90deg, #0071e3 0%, #7a4de8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -1031,7 +1099,7 @@
   .hero-stat-suffix {
     font-size: clamp(18px, 2.5vw, 26px);
     font-weight: 700;
-    color: rgba(255,255,255,0.45);
+    color: rgba(0,0,0,0.3);
     letter-spacing: -0.5px;
   }
 
@@ -1040,7 +1108,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: rgba(255,255,255,0.35);
+    color: rgba(0,0,0,0.38);
     margin-top: 5px;
   }
 
@@ -1055,7 +1123,7 @@
     font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.12;
-    color: rgba(255,255,255,0.2);
+    color: rgba(0,0,0,0.12);
   }
 
   .pull-quote-line.accent {
@@ -1068,16 +1136,26 @@
 
   .pull-quote-meta {
     font-size: 12px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(0,0,0,0.3);
     letter-spacing: 0.5px;
     margin-top: 4px;
   }
 
   /* ── PHIL CARD HOVER GLOWS ── */
-  .phil-card[data-color="blue"]:hover   { box-shadow: 0 16px 48px rgba(0,113,227,0.25), 0 0 0 1px rgba(0,113,227,0.3); }
-  .phil-card[data-color="orange"]:hover { box-shadow: 0 16px 48px rgba(255,107,53,0.25), 0 0 0 1px rgba(255,107,53,0.3); }
-  .phil-card[data-color="teal"]:hover   { box-shadow: 0 16px 48px rgba(50,173,230,0.25), 0 0 0 1px rgba(50,173,230,0.3); }
-  .phil-card[data-color="green"]:hover  { box-shadow: 0 16px 48px rgba(48,209,88,0.2), 0 0 0 1px rgba(48,209,88,0.25); }
+  .phil-card[data-color="blue"]:hover   { box-shadow: 0 16px 40px rgba(0,113,227,0.15), 0 0 0 1px rgba(0,113,227,0.2); }
+  .phil-card[data-color="orange"]:hover { box-shadow: 0 16px 40px rgba(212,75,18,0.15), 0 0 0 1px rgba(212,75,18,0.2); }
+  .phil-card[data-color="teal"]:hover   { box-shadow: 0 16px 40px rgba(0,134,199,0.15), 0 0 0 1px rgba(0,134,199,0.2); }
+  .phil-card[data-color="green"]:hover  { box-shadow: 0 16px 40px rgba(26,138,74,0.15), 0 0 0 1px rgba(26,138,74,0.2); }
+
+  /* ── DARK SECTION ACCENTS — vivid colors restored for dark-background components ── */
+  .coaching-eyebrow { color: #ff7438; }
+  .coaching-headline .twist { color: #ff7438; }
+  .coaching-kicker { color: #36dc6a; }
+  .moment-card[data-theme="crisis"]  .moment-eyebrow { color: #ff7438; }
+  .moment-card[data-theme="covid"]   .moment-eyebrow { color: #36d3ea; }
+  .moment-card[data-theme="today"]   .moment-eyebrow { color: #36dc6a; }
+  .moment-card[data-theme="manage"]  .moment-eyebrow { color: #cc65f5; }
+  .moment-card[data-theme="di"]      .moment-eyebrow { color: #bf5af2; }
 
   /* ── REDUCED MOTION ── */
   @media (prefers-reduced-motion: reduce) {
@@ -1098,14 +1176,13 @@
     .job-detail { max-height: none !important; }
     body { background: white; }
     .reveal { opacity: 1 !important; transform: none !important; }
-    .hero { background: white; padding: 24px 0; }
-    .hero-name { color: var(--text); font-size: 48px; }
-    .hero-line { color: var(--text-2); }
-    .coaching-feature { background: #f0f0f5; }
-    .coaching-headline { color: var(--text); }
-    .coaching-body { color: var(--text-2); }
-    .project-card { background: var(--bg) !important; color: var(--text) !important; min-height: auto; border: 1px solid var(--border); }
-    .project-name, .project-tag, .project-one-liner { color: var(--text) !important; }
+    .hero { background: white; padding: 24px 0; border-bottom: none; }
+    .hero-name { font-size: 48px; }
+    .coaching-feature { background: #f5f5f7; }
+    .coaching-headline { color: #1d1d1f; }
+    .coaching-body { color: #6e6e73; }
+    .project-card { background: #f5f5f7 !important; color: #1d1d1f !important; min-height: auto; border: 1px solid rgba(0,0,0,0.1); }
+    .project-name, .project-tag, .project-one-liner { color: #1d1d1f !important; }
   }
 
   /* ── TABLET ── */
@@ -1147,7 +1224,7 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <span class="site-name" role="button" tabindex="0" onclick="showTab('story', null)" onkeydown="if(event.key==='Enter'||event.key===' ')showTab('story',null)">Em Allen</span>
+    <span class="site-name" role="button" tabindex="0" onclick="showTab('story', null); window.scrollTo({top:0, behavior:'smooth'});" onkeydown="if(event.key==='Enter'||event.key===' '){showTab('story',null);window.scrollTo({top:0,behavior:'smooth'});}">Em Allen</span>
     <nav class="tab-nav" role="tablist">
       <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-story" data-tab="story" onclick="showTab('story', this)">Story</button>
       <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-track" data-tab="track" onclick="showTab('track', this)">Track Record</button>
@@ -1165,22 +1242,21 @@
   </div>
   <div class="hero-inner">
     <div class="hero-name" role="heading" aria-level="1" aria-label="Em Allen">EM ALLEN</div>
-    <div class="hero-sub">Program Manager &nbsp;+&nbsp; L&amp;D &nbsp;+&nbsp; Org Effectiveness</div>
-    <div style="font-size:14px;color:rgba(255,255,255,0.5);letter-spacing:0.2px;margin-top:4px;">they/them &nbsp;&middot;&nbsp; Portland, OR</div>
+    <div class="hero-sub">Enablement &amp; L&amp;D Leader &nbsp;&middot;&nbsp; Program Manager &nbsp;&middot;&nbsp; Org Effectiveness</div>
+    <div style="font-size:14px;color:rgba(0,0,0,0.45);letter-spacing:0.2px;margin-top:4px;">they/them &nbsp;&middot;&nbsp; Portland, OR</div>
     <div style="margin-top:20px; display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
-      <span role="button" tabindex="0" style="display:inline-flex;align-items:center;gap:6px;background:rgba(48,209,88,0.15);border:1px solid rgba(48,209,88,0.4);color:#30d158;padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;" onclick="document.querySelector('.contact-bar').scrollIntoView({behavior:'smooth'})" onkeydown="if(event.key==='Enter'||event.key===' ')document.querySelector('.contact-bar').scrollIntoView({behavior:'smooth'})">&#x25CF; Available July 2026 &mdash; Let's talk &rarr;</span>
-      <a href="resume.pdf" download="Em_Allen_Resume.pdf" style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.85);padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;">Resume PDF &#x2193;</a>
+      <span role="button" tabindex="0" style="display:inline-flex;align-items:center;gap:6px;background:rgba(48,209,88,0.15);border:1px solid rgba(48,209,88,0.4);color:#30d158;padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;" onclick="goToContact()" onkeydown="if(event.key==='Enter'||event.key===' ')goToContact()">&#x25CF; Available July 2026 · Let's talk &rarr;</span>
+      <a href="resume.pdf" download="Em_Allen_Resume.pdf" style="display:inline-flex;align-items:center;gap:6px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.15);color:rgba(0,0,0,0.7);padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;">Resume PDF &#x2193;</a>
     </div>
     <div class="hero-line" style="margin-top:28px;">I find what's not working. <strong>Then I build the thing that fixes it.</strong> Then I make sure it runs even when I'm not there.</div>
     <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
-      <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(96,208,255,0.1);border:1px solid rgba(96,208,255,0.25);color:#60d0ff;padding:5px 13px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.2px;">Competitively selected &nbsp;&middot;&nbsp; Apple HQ corporate rotation &nbsp;&middot;&nbsp; Programs still running</span>
+      <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(0,113,227,0.08);border:1px solid rgba(0,113,227,0.2);color:#0066cc;padding:5px 13px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.2px;">Competitively selected &nbsp;&middot;&nbsp; Apple HQ corporate rotation &nbsp;&middot;&nbsp; Programs still running</span>
     </div>
-    <div style="margin-top:10px;font-size:13px;color:rgba(255,255,255,0.42);letter-spacing:0.2px;max-width:560px;line-height:1.55;">Clearest value: the person who holds the whole picture so leadership can stay in the decision.</div>
-    <div style="margin-top:16px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:0.2px;">12 years at Apple &nbsp;&middot;&nbsp; 100+ person org &nbsp;&middot;&nbsp; 87/100 TMS &nbsp;&middot;&nbsp; 1-in-20&rarr;1-in-10 behavior change (90 days, Kirkpatrick L3-4)</div>
+    <div style="margin-top:10px;font-size:16px;font-weight:500;color:var(--text-2);letter-spacing:0.1px;max-width:560px;line-height:1.55;">Clearest value: the person who holds the whole picture so leadership can stay in the decision.</div>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-value"><span class="counter" data-target="87">87</span><span class="hero-stat-suffix">/100</span></div>
-        <div class="hero-stat-label">TMS Score</div>
+        <div class="hero-stat-label">Customer NPS <span style="font-size:10px;opacity:0.65;">(Team Member Score)</span></div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-value"><span class="counter" data-target="397">397</span></div>
@@ -1195,7 +1271,7 @@
         <div class="hero-stat-label">Person Org</div>
       </div>
     </div>
-    <div style="margin-top:0;font-size:12px;color:rgba(255,255,255,0.3);letter-spacing:0.2px;">6-month corporate PM rotation &nbsp;&middot;&nbsp; Apple HQ &nbsp;&middot;&nbsp; 3 programs, 30+ stakeholders, 6 systems built</div>
+    <div style="margin-top:14px;font-size:13px;color:rgba(0,0,0,0.5);letter-spacing:0.1px;max-width:560px;line-height:1.5;">Bridgeport Village is a designated Apple training store: one of a small number in the US where leadership development, coaching, and curriculum design are core functions, not incidental ones.</div>
     <div class="philosophy-cards">
       <div class="phil-card" data-color="blue" role="button" tabindex="0" onclick="showTab('story', null)" onkeydown="if(event.key===\'Enter\'||event.key===\' \')this.click()" title="Go to Story">
         <div class="phil-card-num">01</div>
@@ -1224,7 +1300,7 @@
     </div>
     <div class="scroll-signal">
       <span>Explore</span>
-      <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V12M6 12L1.5 7.5M6 12L10.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg width="16" height="18" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1V12M6 12L1.5 7.5M6 12L10.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
   </div>
 </section>
@@ -1235,10 +1311,10 @@
 <!-- ═══ STORY ═══ -->
 <div class="tab-panel active" id="panel-story" role="tabpanel">
 
-  <div class="section-label reveal">The Through-Line</div>
-  <div class="reveal">
+  <div class="section-label reveal" id="anchor-archive">The Through-Line</div>
+  <div class="reveal throughline-wrap">
     <div class="throughline-story active" id="tl-0">
-      <div class="story-context">The Knowledge Archive &nbsp;&middot;&nbsp; Apple Corporate Rotation 2026</div>
+      <div class="story-context">The Knowledge Archive &nbsp;&middot;&nbsp; CE Rotation 2026</div>
       <div class="intro-strip">
         <div class="intro-tile" data-color="blue">
           <div class="intro-tile-label">How it started</div>
@@ -1272,11 +1348,11 @@
       </div>
     </div>
     <div class="throughline-story" id="tl-2">
-      <div class="story-context">1 in 20 &rarr; 1 in 10 &nbsp;&middot;&nbsp; Genius Bar</div>
+      <div class="story-context">Behavior Change at Scale &nbsp;&middot;&nbsp; Genius Bar</div>
       <div class="intro-strip">
         <div class="intro-tile" data-color="blue">
           <div class="intro-tile-label">How it started</div>
-          <div class="intro-tile-body">1 in 20 team members was proactively connecting customers with small business services. Everyone called it a knowledge problem. I asked a different question.</div>
+          <div class="intro-tile-body">1 in 20 team members was having Apple Business conversations with customers. Everyone called it a knowledge problem. I asked a different question.</div>
         </div>
         <div class="intro-tile" data-color="orange">
           <div class="intro-tile-label">What I did</div>
@@ -1299,11 +1375,13 @@
     </div>
   </div>
 
-  <div class="section-label reveal">Coaching in Action</div>
+  <p class="reveal" style="max-width:680px;margin:0 auto 48px;text-align:center;color:var(--text-2);font-size:17px;line-height:1.65;">Every system on this page was built inside Apple and held to Apple's standards — not as coursework, but as production infrastructure that had to survive real teams, leadership transitions, and global scale. That's the credential.</p>
+
+  <div class="section-label reveal" id="anchor-coaching">Coaching in Action</div>
   <div class="pull-quote reveal">
     <div class="pull-quote-line">Not a knowledge problem.</div>
     <div class="pull-quote-line accent">A behavior problem.</div>
-    <div class="pull-quote-meta">The diagnostic that doubled small business outreach &nbsp;&middot;&nbsp; Kirkpatrick Level 3-4 tracking &nbsp;&middot;&nbsp; 1 in 20 to 1 in 10 in 90 days</div>
+    <div class="pull-quote-meta">The diagnostic that doubled Apple Business conversations &nbsp;&middot;&nbsp; Kirkpatrick Level 3-4 tracking &nbsp;&middot;&nbsp; 1 in 20 to 1 in 10 in 90 days</div>
   </div>
   <div class="coaching-feature reveal">
     <div class="coaching-eyebrow">A story worth telling</div>
@@ -1319,38 +1397,38 @@
   <div class="section-label reveal">Moments of Note</div>
   <div class="moment-grid">
 
-    <div class="moment-card reveal" data-theme="crisis">
+    <div class="moment-card reveal" id="anchor-battery" data-theme="crisis">
       <div class="moment-eyebrow">Crisis Leadership &nbsp;&middot;&nbsp; 2018</div>
       <div class="moment-headline">Apple made a public promise to millions of customers. <span class="dim">My Genius Bar was where they came to collect.</span></div>
-      <div class="moment-body">In 2018, Apple offered $29 battery replacements as a public apology for throttling older iPhones. Volume exploded overnight. Most stores saw service quality collapse. I kept 100+ people coached, the queue moving, and the human connection intact through months of sustained chaos. No scripts. No mandates. Just coaching to the actual problem in each interaction.</div>
-      <div class="moment-kicker">Received Apple's top customer satisfaction recognition (Ovation Award) for the Pacific Northwest, during the hardest operational stretch in a decade.</div>
+      <div class="moment-body">Volume exploded overnight. Most stores saw service quality collapse. I kept 100+ people coached, the queue moving, and the human connection intact. Months of sustained chaos. Zero scripts.</div>
+      <div class="moment-kicker">Ovation Award for top NPS across the Pacific Northwest District, during the hardest operational stretch in a decade.</div>
     </div>
 
-    <div class="moment-card reveal" data-theme="covid">
+    <div class="moment-card reveal" id="anchor-covid" data-theme="covid">
       <div class="moment-eyebrow">Ambiguity to System &nbsp;&middot;&nbsp; 2020</div>
       <div class="moment-headline">No playbook existed for reopening a 100-person Apple store in a pandemic. <span class="dim">So I wrote one.</span></div>
-      <div class="moment-body">Store closed March 2020. I designed the Express Station format from blank page: social distancing protocol, health screening, session monitoring, zone coverage, and leader coaching behaviors, all defined before anyone walked back in. The team had a complete operating system when the doors reopened. Nobody had to figure it out in the moment.</div>
+      <div class="moment-body">Store closed March 2020. Before the doors reopened, I had written the complete operating system: distancing protocol, health screening, zone coverage, leader coaching behaviors. Nobody had to figure it out in the moment.</div>
       <div class="moment-kicker">Ambiguity to operating system in weeks. Still running under new leadership four years later.</div>
     </div>
 
-    <div class="moment-card reveal" data-theme="today">
+    <div class="moment-card reveal" id="anchor-connection" data-theme="today">
       <div class="moment-eyebrow">Partnership Without Mandate &nbsp;&middot;&nbsp; 2019&ndash;2020</div>
       <div class="moment-headline">Nobody was showing up to Today at Apple. <span class="dim">I didn't make attendance mandatory.</span></div>
-      <div class="moment-body">The Today at Apple team needed engagement from the broader store. The obvious move was mandate. I took a different path: embedded the people I was developing into my peers' business strategies, tied programming directly to sales results and same-day service resolution rates, and made attendance useful rather than obligatory. No authority needed. Just alignment on why it mattered.</div>
+      <div class="moment-body">The obvious move was mandate. Instead I embedded programming directly into my peers' business results and made attendance useful rather than obligatory. No authority. Just alignment.</div>
       <div class="moment-kicker">4x attendance in two consecutive quarters. Zero mandates issued.</div>
     </div>
 
-    <div class="moment-card reveal" data-theme="manage">
+    <div class="moment-card reveal" id="anchor-manage" data-theme="manage">
       <div class="moment-eyebrow">The Fourteenth Conversation &nbsp;&middot;&nbsp; 2018&ndash;2019</div>
-      <div class="moment-headline">Every time I coached, the response was the same: <span class="dim">"I've never had a problem before."</span></div>
-      <div class="moment-body">Managing a 100-person team means holding the line on safety and integrity even when someone is likable, even when each incident looks small, even when the deflection is smooth. I built a documented record across multiple leaders, maintained the coaching relationship through every pushback, and kept the work honest. The job wasn't punishing someone. It was protecting everyone else.</div>
+      <div class="moment-headline">Every time I coached a team member, the response was the same: <span class="dim">"I've never had a problem before."</span></div>
+      <div class="moment-body">Holding the line means staying consistent when someone is likable, each incident looks small, and the deflection is smooth. I documented everything, coached through every pushback, and kept the work honest. The job wasn't punishment. It was protection.</div>
       <div class="moment-kicker">The hardest management work isn't the performance review. It's the fourteenth conversation.</div>
     </div>
 
   </div>
 
   <div class="section-label reveal">By the Numbers</div>
-  <p class="reveal" style="color:rgba(255,255,255,0.5);font-size:14px;margin:0 0 20px;line-height:1.6;">12 years across retail management, corporate program management, coaching, and systems building. Here's what that looks like in numbers.</p>
+  <p class="reveal" style="color:rgba(0,0,0,0.5);font-size:14px;margin:0 0 20px;line-height:1.6;">12 years across retail management, corporate program management, coaching, and systems building. Here's what that looks like in numbers.</p>
   <div class="stat-grid">
     <div class="stat-card blue reveal">
       <div class="stat-num">12</div>
@@ -1362,7 +1440,7 @@
     </div>
     <div class="stat-card orange reveal">
       <div class="stat-num">2x</div>
-      <div class="stat-desc">small business outreach rate doubled in 90 days flat</div>
+      <div class="stat-desc">Apple Business referral rate in 90 days flat</div>
     </div>
     <div class="stat-card light reveal">
       <div class="stat-num">4x</div>
@@ -1382,7 +1460,7 @@
     </div>
     <div class="stat-card light reveal">
       <div class="stat-num">3</div>
-      <div class="stat-desc">concurrent NPI programs, 30+ cross-functional stakeholders globally</div>
+      <div class="stat-desc">concurrent NPI programs spanning 8 active SKUs, 30+ cross-functional stakeholders globally</div>
     </div>
   </div>
 
@@ -1414,7 +1492,7 @@
   <div class="moment-card reveal" data-theme="di">
     <div class="moment-eyebrow">One Voice, Company-Wide Impact &nbsp;&middot;&nbsp; 2019&ndash;2020</div>
     <div class="moment-headline">I escalated one piece of feedback on a company-wide product announcement.<br><span class="dim">It turned a clinical release into a company celebration.</span></div>
-    <div class="moment-body">Served as one of two founding volunteer leads for Women @ Apple, including organizing the Compass Family Service fundraiser. Within nine months I had directly accelerated Pride @ Apple's launch and been selected as a lead in the business impact space, working to improve benefits and company-wide inclusion impact. Then a product announcement landed wrong for our communities. I wrote one piece of feedback, at the right moment, framed for the right audience. The release strategy changed. A clinical company moment became a celebration instead.</div>
+    <div class="moment-body">Founding volunteer lead for Women @ Apple Retail DNA; accelerated Pride @ Apple DNA's launch within nine months. Then a product announcement landed wrong. I wrote one piece of feedback, at the right moment, framed for the right audience. The release strategy changed.</div>
     <div class="moment-kicker">One person. One feedback. Company-wide impact.</div>
   </div>
 
@@ -1427,13 +1505,19 @@
     <strong>Portland, OR</strong>
     <a href="mailto:hi.em.allen@gmail.com">hi.em.allen@gmail.com</a>
     <a href="https://linkedin.com/in/em-allen-13b0a768">LinkedIn ↗</a>
-    <a href="resume.html" target="_blank">Resume ↗</a>
+    <a href="resume.pdf" download="Em_Allen_Resume.pdf">Resume PDF ↓</a>
   </div>
 
 </div>
 
 <!-- ═══ TRACK RECORD ═══ -->
 <div class="tab-panel" id="panel-track" role="tabpanel">
+
+  <div class="pull-quote reveal">
+    <div class="pull-quote-line">87 out of 100.</div>
+    <div class="pull-quote-line accent">Every conversation. Measured. Consistently.</div>
+    <div class="pull-quote-meta">Team Member Score (NPS) &nbsp;&middot;&nbsp; 397 interactions tracked &nbsp;&middot;&nbsp; 7 years Genius Bar leadership</div>
+  </div>
 
   <div class="section-label reveal">Career Timeline</div>
   <div class="timeline">
@@ -1456,13 +1540,13 @@
           <div class="job-detail-inner">
             <ul>
               <li>Identified six disconnected knowledge repositories no single team had mapped. Built the governance model from scratch: unified location taxonomy, documentation standards, and cross-functional ownership structure. Aligned Legal, MarCom, Engineering, and Apple University across competing priorities and delivered a 10-minute executive briefing that converted a self-initiated discovery into a funded pilot. Blank page to funded in under six months.</li>
-              <li>Managed multiple concurrent programs from design review through manufacturing launch: 30+ stakeholders across the US, China, Taiwan, and India; no positional authority; every decision moved because I built the visibility and trust that made accountability the easier choice</li>
-              <li>Built a live program visibility dashboard tracking dozens of concurrent programs across multiple lines of business: replaced a multi-tab Keynote deck that 20+ team members were manually updating every week with a filterable tool with automated accountability gap surfacing, group-by-LOB, and CSV export; presented to VP-level leadership and transferred to the incoming team as their official ongoing NPI status tool, with full refresh automation built in</li>
-              <li>Served as primary context carrier for VP-level program reviews across 3 concurrent programs: distilled 30+ stakeholder threads into executive-ready briefings before each decision-point review, so leadership had a single coherent picture instead of a status report from every workstream</li>
-              <li>Built the AI workflow layer most people skip: voice memo to formatted meeting notes in under 5 minutes, via a custom-built MCP server with persistent context across every program. The system compounds: the longer it runs, the more accurate and specific it gets.</li>
-              <li>Built a text-expansion system converting 342 keystrokes into 55,000+ characters of structured PM output: status updates, stakeholder emails, meeting agendas, follow-ups. In daily active use. Maintained parallel program tracking in Google Sheets across all active programs: sample demand, vendor timelines, and cross-program status visibility.</li>
-              <li>Designed AI adoption curriculum for non-technical employees: 5-document package built on adult learning theory, instructional design scaffolding, accessibility standards for neurodivergent and aging-adult learners, and scrum methodology; audited own first draft, identified 7 structural gaps, rebuilt: a complete instructional design cycle, portfolio-ready</li>
-              <li>Caught build readiness blockers before they reached manufacturing windows, without ownership of the schedule or positional authority over the vendors. Asked why, not just what. Closed items that had been open for months because I was willing to hold the thread when no one else was assigned to.</li>
+              <li>Managed 3 concurrent programs spanning 8 global SKUs from design review through manufacturing launch: 30+ stakeholders across the US, China, Taiwan, and India; no positional authority; every decision moved because I built the visibility and trust that made stakeholder accountability the natural path.</li>
+              <li>Built a live program visibility dashboard tracking 141 programs across 14 lines of business: replaced a 14-tab Keynote deck that 20+ team members were manually updating every week with a filterable tool with automated accountability gap surfacing, group-by-LOB, and CSV export. Presented to VP-level leadership and transferred to the incoming team as their official ongoing NPI status tool, with full refresh automation and handoff documentation so the tool outlasts the rotation.</li>
+              <li>Functioned as de facto Chief of Staff across 3 concurrent programs: owned the synthesis layer for VP-level program reviews, distilling 30+ stakeholder threads into executive-ready briefings before each decision-point review, so leadership had a single coherent picture instead of a status report from every workstream.</li>
+              <li>Built the AI workflow layer that accelerates PM output: voice memo to formatted meeting notes in under 5 minutes, via a custom-built MCP server with persistent context across every program. The system compounds: the longer it runs, the more accurate and specific it gets.</li>
+              <li>Built a text-expansion system converting shorthand into fully formatted PM output: status updates, stakeholder emails, meeting agendas, and follow-ups in seconds. Maintained parallel cross-program tracking in Google Sheets across all active programs: sample demand, vendor timelines, and status visibility in one place.</li>
+              <li>Designed AI adoption curriculum for non-technical employees: 5-document package built on adult learning theory, instructional design scaffolding, accessibility standards for neurodivergent and aging-adult learners, and scrum methodology. Built evaluation checkpoints at weeks 1, 4, and 8 to measure behavior change, not just completion. Audited own first draft, identified 7 structural gaps, rebuilt: a complete instructional design cycle.</li>
+              <li>Caught build readiness blockers before they reached manufacturing windows, without ownership of the schedule or positional authority over the vendors. Asked why, not just what. Closed items that had been open for months because I was willing to own the thread when no one else had claimed it.</li>
             </ul>
           </div>
         </div>
@@ -1482,11 +1566,13 @@
             <div class="expand-btn" aria-hidden="true">&#x25BE;</div>
           </div>
         </div>
+        <div class="job-context">Deliberate step back to IC after six years in management: rebuild technical depth, prove the ability to compete from any level, then position for the corporate track.</div>
         <div class="job-detail">
           <div class="job-detail-inner">
             <ul>
-              <li>After six years in Genius Bar management, took a deliberate break, then returned to Apple in a technical role by choice. Competed for and won the January 2026 corporate engineering rotation within the first year back.</li>
-              <li>Primary coaching and diagnostic resource across the store; recognized as operating above title while building toward the corporate track</li>
+              <li>Returned to Apple in a technical IC role by choice and competed for the January 2026 corporate engineering rotation, winning the placement within the first year back.</li>
+              <li>Consistently pulled into coaching and problem-solving conversations outside my immediate role; primary diagnostic resource for emerging leaders across the team.</li>
+              <li>Earned Exceeded Expectations in both Teamwork and Results in FY25, working part-time, in the direct year before entering the corporate rotation.</li>
             </ul>
           </div>
         </div>
@@ -1510,9 +1596,9 @@
         <div class="job-detail">
           <div class="job-detail-inner">
             <ul>
-              <li>Manages the full business operations infrastructure using Apple Freeform, Google Docs, and Numbers: website, financial tracking and bookkeeping, tax preparation, and client-facing systems. Zero staff. Built from scratch.</li>
-              <li>Serves as program management layer for all community engagement initiatives the principal designs: translates creative vision into logistics, timelines, and execution.</li>
-              <li>Manages principal's schedule and capacity to protect sustainable throughput: rest, limits, and recovery time built into the calendar by design, not negotiated after the fact.</li>
+              <li>Managed the full business operations infrastructure from scratch using Apple Freeform, Google Docs, and Numbers: website, financial tracking, bookkeeping, tax preparation, and client-facing systems. Zero additional staff.</li>
+              <li>Served as program management layer for all community engagement initiatives the principal designed: translated creative vision into logistics, timelines, and execution.</li>
+              <li>Managed principal's schedule and capacity to protect sustainable throughput: rest, limits, and recovery time built into the calendar by design, not negotiated after the fact.</li>
             </ul>
           </div>
         </div>
@@ -1532,18 +1618,21 @@
             <div class="expand-btn" aria-hidden="true">&#x25BE;</div>
           </div>
         </div>
+        <div class="job-context">Designated Apple training store: one of a small number in the US where the job is building the leaders who serve customers, not serving customers directly. Leadership development, coaching, and curriculum design were core functions here.</div>
         <div class="job-detail">
           <div class="job-detail-inner">
             <ul>
-              <li>Led a 100+ person team at an Apple training store for six years: not individual contributors, leaders. Developing them was the primary job. Ranked top 5 of 30 stores in the Portland market, sustained over six years.</li>
-              <li>Identified that 1 in 20 team members was proactively connecting customers with Apple's small business services: a behavior problem, not a knowledge problem. Built a three-part system: coached the coaches on how to lead their teams, matched top performers with peers as mentors, and reframed the why from obligation to customer impact. Tracked at 30, 60, and 90 days: 1 in 20 to 1 in 10. Not a new program: a culture shift.</li>
+              <li>Led a 100+ person team at an Apple training store for six years, where the job wasn't serving customers: it was developing the leaders who did. Ranked top 5 of 30 stores in the Portland market, sustained over six years.</li>
+              <li>Identified that 1 in 20 team members was having Apple Business conversations with customers: a behavior problem, not a knowledge problem. Built a three-part system: coached the coaches on how to lead their teams, matched top performers with peers as mentors, and reframed the why from obligation to customer impact. Tracked at 30, 60, and 90 days: 1 in 20 to 1 in 10. Not a new program: a culture shift.</li>
               <li>Built full L&amp;D infrastructure for a 100+ person org: custom competency frameworks (Lead and Manager levels, Lominger-derived), a 10-week structured coaching curriculum, a 5-track onboarding system covering every role from Specialist to Manager, and operating playbooks for new service formats. All designed for handoff. All still running.</li>
               <li>Operated as diagnostic coach for emerging leaders: identified whether someone was stuck in process, stuck in confidence, or working from the wrong frame entirely, then designed the intervention for that specific gap. Multiple people on the team moved into expanded roles during or after my tenure. Same diagnostic instinct I now apply to systems.</li>
-              <li>Designed the COVID-era operating model change from blank page: stakeholder alignment, full format redesign, safety protocol documentation, leader enablement, and zone coverage, all defined before anyone walked back in. The team had a complete operating system when the doors reopened. Nobody had to figure it out in the moment. Ambiguity to operating system in two weeks. That is change management without the title.</li>
-              <li>Facilitated leadership cohorts, new hire onboarding, and certification programs for 50 to 200 participants; adapted delivery in real time based on where people were actually stuck</li>
-              <li>Quadrupled Today at Apple attendance over two consecutive quarters through targeted programming and team coaching alignment</li>
+              <li>Designed the COVID Express Station operating playbook from scratch: full format change, social distancing protocol, session monitoring, health screening, zone coverage, and leader coaching behaviors defined. Ambiguity to operating system in weeks. That is change management without the title.</li>
+              <li>Facilitated leadership cohorts, new hire onboarding, and certification programs for 50 to 200 participants: adapted delivery in real time based on where people were actually stuck.</li>
+              <li>Quadrupled Today at Apple attendance over two consecutive quarters: diagnosed why the existing program wasn't landing, redesigned the team coaching approach, and built the peer mentoring structure that drove the shift.</li>
+              <li>Built a new service program from scratch and drove it to 85 customer NPS and #2 iPhone focus ranking across the Oregon/Alaska market within one year.</li>
+              <li>Co-led a documented coaching newsletter and peer accountability program designed to move key performance metrics from target to outstanding: built with three other senior leaders in the final months of this tenure, drove measurable behavior change within weeks.</li>
               <li>Ran the full operating cadence for a 100+ person org: weekly leadership team reviews, monthly performance cycles, quarterly goal-setting and resource allocation, and annual hiring, succession planning, and competency calibration across all functions and roles.</li>
-              <li>Received Apple's top customer satisfaction recognition (Ovation Award) for NPS results driven by leadership culture, diagnostic coaching, and sustained operational quality</li>
+              <li>Led the Genius Bar team to earn the Ovation Award for top NPS across the Pacific Northwest district: a result of six years of consistent leadership culture, diagnostic coaching, and operational quality.</li>
             </ul>
           </div>
         </div>
@@ -1566,10 +1655,10 @@
         <div class="job-detail">
           <div class="job-detail-inner">
             <ul>
-              <li>Completed Apple's selective 2-year cross-departmental leadership development program. I was the target population for programs like this one, which means I know what works from the inside, not just from the data.</li>
-              <li>Selected as interim operations lead at a second Portland store: stepped in with no handoff, no context, and exceeded all benchmarks</li>
-              <li>Recruited by store leaders to support the development of emerging leaders while still in the ASLP program; recognized as a development resource before holding formal management title</li>
-              <li>Built cross-store L&amp;D relationships with training specialists at peer locations; proactively cross-pollinated training approaches across stores</li>
+              <li>Completed Apple's selective 2-year cross-departmental leadership development program. I was the exact profile this program was designed to develop, which means I know what works from the inside, not just from the data.</li>
+              <li>Selected as interim operations lead at a second Portland store: stepped in with no handoff, no context, and exceeded all benchmarks. Reduced store shrink variances 55% in six weeks (60 adjustments per week to 27) by co-authoring team workflows, building cross-functional accountability, and getting team members to co-own the fix.</li>
+              <li>At the close of that milestone, the Washington Square Store Leader sent a personal invitation to meet about Leadership at Apple: one of the clearest early signals that the work was visible and the pipeline was already open.</li>
+              <li>Recruited by store leaders to support Connection Team development while still in the ASLP program: recognized as a leader and development resource before holding formal management title. Senior manager Exchange Journal feedback: "You established yourself as a leader with this group, and as a resource for support, encouragement, and accountability."</li>
             </ul>
           </div>
         </div>
@@ -1592,7 +1681,7 @@
         <div class="job-detail">
           <div class="job-detail-inner">
             <ul>
-              <li>Deep-level technical diagnosis and customer problem resolution; mentored Specialists through complex scenarios; earned Apple certifications across service, repair, and customer experience; selected for ASLP (Apple Store Leader Program)</li>
+              <li>Apple-certified senior technician (Mac and iOS); primary mentor for Specialists navigating complex diagnostic scenarios; selected for the Apple Store Leader Program out of store-wide competition.</li>
               <li>Completed Apple's In-Store Guest Trainer program: one week of intensive adult learning theory followed by a nine-month residency designing and delivering onboarding for every role from new hire to senior technician. The foundation of everything I do in L&amp;D.</li>
             </ul>
           </div>
@@ -1616,7 +1705,7 @@
         <div class="job-detail">
           <div class="job-detail-inner">
             <ul>
-              <li>Built a coaching curriculum and a player-to-coach pipeline; left with a program that ran itself and a successor ready to lead it</li>
+              <li>Built a coaching curriculum and a player-to-coach pipeline; left with a program that ran itself and a successor ready to lead it.</li>
             </ul>
           </div>
         </div>
@@ -1633,19 +1722,33 @@
     <button class="chip" onclick="filterComp(this,'ai')">AI &amp; Ops</button>
     <button class="chip" onclick="filterComp(this,'leadership')">Leadership</button>
     <button class="chip" onclick="filterComp(this,'knowledge')">Knowledge Systems</button>
+    <button class="chip" onclick="filterComp(this,'cos')">Chief of Staff</button>
+    <button class="chip" onclick="filterComp(this,'people')">People Ops</button>
   </div>
 
   <table class="comp-table reveal">
     <thead><tr><th>What the role needs</th><th>Where this portfolio answers it</th></tr></thead>
     <tbody>
-      <tr data-tags="pm leadership"><td>Ambiguity to structured plan</td><td>Archive initiative (blank page to funded); 90-day behavior change (Genius Bar); interim ops lead with zero handoff (ASLP)</td></tr>
-      <tr data-tags="enablement leadership"><td>Enablement / program design</td><td>10-week coaching curriculum; Kirkpatrick Level 3-4 evaluation; competency frameworks; Same Unit Repair Bingo; In-Store Guest Trainer; 5-track onboarding; AI curriculum</td></tr>
-      <tr data-tags="ai pm"><td>AI operations &amp; integration</td><td>Voice-to-doc pipeline (custom MCP server); text expansion (342 keystrokes = 55,000+ chars); Apple Enterprise AI Fluency; live NPI dashboard</td></tr>
-      <tr data-tags="leadership pm"><td>Executive influence without authority</td><td>10-min briefing converting self-initiated work to funded initiative; Archive alignment across 6 XF teams; product rollout changed from one piece of feedback</td></tr>
-      <tr data-tags="pm ai leadership"><td>Data-informed iteration</td><td>1 in 20 to 1 in 10 tracked at 30/60/90 days; automated gap surfacing (dashboard); AI system with persistent context; every program built with feedback loops</td></tr>
-      <tr data-tags="pm"><td>Multi-workstream program mgmt</td><td>multiple concurrent programs, 30+ cross-functional stakeholders globally; Genius Bar: hiring, coaching, training, ops, culture simultaneously for six years</td></tr>
-      <tr data-tags="knowledge enablement"><td>Knowledge systems design</td><td>Archive: 6 repos to unified taxonomy + governance + XF ownership; L&amp;D systems designed for handoff, all outlived tenure</td></tr>
-      <tr data-tags="leadership"><td>Apple culture &amp; change leadership</td><td>12 years at Apple; ASLP alum; competitive corporate rotation driving change without authority; re-entered corporate pipeline on own terms</td></tr>
+      <tr data-tags="pm cos"><td>Ambiguity to structured plan</td><td>Archive initiative (blank page to funded, 6 months); 90-day behavior change program (Genius Bar); interim ops lead with zero handoff (ASLP); CE rotation: structure created where none existed, across 3 concurrent programs</td></tr>
+      <tr data-tags="enablement leadership"><td>Enablement / program design</td><td>10-week coaching curriculum; Kirkpatrick Level 3-4 evaluation; competency frameworks; Same Unit Repair Bingo; In-Store Guest Trainer; 5-track onboarding; AI adoption curriculum</td></tr>
+      <tr data-tags="ai pm"><td>AI operations &amp; integration</td><td>Voice-to-doc pipeline (custom MCP server); text expansion (342 keystrokes = 55,000+ chars); EPx AI Fluency; live NPI dashboard replacing 14-tab Keynote deck</td></tr>
+      <tr data-tags="leadership cos"><td>Executive influence without authority</td><td>10-min briefing converting 6 months of self-initiated work into a funded initiative; Archive alignment across 6 XF teams with no mandate; product rollout changed from one piece of feedback; CE rotation: 30+ stakeholders, zero direct reports</td></tr>
+      <tr data-tags="pm ai"><td>Data-informed iteration</td><td>1 in 20 to 1 in 10 tracked at 30/60/90 days; automated gap surfacing in NPI dashboard; AI system with persistent context that compounds over time; every program built with measurement loops, not just delivery milestones</td></tr>
+      <tr data-tags="pm"><td>Multi-workstream program mgmt</td><td>3 concurrent NPI programs spanning 8 active SKUs, 30+ cross-functional stakeholders across US, China, Taiwan, India; Genius Bar: hiring, coaching, training, ops, and culture simultaneously for six years</td></tr>
+      <tr data-tags="knowledge enablement"><td>Knowledge systems design</td><td>Archive: 6 disconnected repos to unified taxonomy + governance + named XF ownership; L&amp;D systems designed for handoff; all programs outlived the tenure of the person who built them</td></tr>
+      <tr data-tags="leadership people"><td>Apple culture &amp; change leadership</td><td>12 years at Apple across retail and corporate; ASLP alum; CE rotation driving change without authority; re-entered the corporate pipeline on own terms, from IC, within the first year back</td></tr>
+      <tr data-tags="ai enablement"><td>AI enablement &amp; technology adoption</td><td>AI adoption curriculum (Kirkpatrick Level 3 evals at weeks 1, 4, 8); custom MCP server build; voice-to-notes pipeline; EPx AI Fluency; text expansion system at scale. Behavior change demonstrated, not just completion rates.</td></tr>
+      <tr data-tags="cos pm leadership"><td>Context distillation for decision-makers</td><td>10-min briefing converting 6 months of Archive complexity into a funded initiative; NPI dashboard built as a leadership view, not an operator view; every stakeholder update written for the person with 10 minutes, not 60</td></tr>
+      <tr data-tags="cos leadership"><td>Making the principal more effective</td><td>Chief of Operations: translated creative vision into logistics, built calendar infrastructure to protect sustainable throughput; CE rotation: owned the coordination layer so engineering leadership stayed on technical decisions, not status management</td></tr>
+      <tr data-tags="enablement pm"><td>Needs assessment before solution design</td><td>Apple Business conversations: behavioral gap, not knowledge gap; Genius Bar repairs: confidence failure mode, not skill gap; Archive: findability failure, not storage failure. The different question every time before a single deliverable was built.</td></tr>
+      <tr data-tags="enablement"><td>Adult learning principles and instructional design</td><td>In-Store Guest Trainer (adult learning principles + 9-month onboarding residency); Kirkpatrick Level 3-4 measurement designed into programs at build, not added after delivery; Same Unit Repair Bingo designed to surface who is struggling without requiring self-disclosure</td></tr>
+      <tr data-tags="people leadership"><td>Performance management and development cycles</td><td>Exceeded Expectations (Teamwork + Results) FY25, working part-time, year before CE rotation; Genius Bar Manager: annual reviews, development plans, and growth ladders for 100+ person team for six years; AI curriculum built with 8-week behavior change tracking</td></tr>
+      <tr data-tags="people enablement"><td>Leader development and coaching framework</td><td>Coaching system producing manager-led development (not HR-led); competency frameworks for Genius and Specialist roles; recruited to support Connection Team development while still in ASLP; 30+ leaders sourced and developed over six years at the Genius Bar</td></tr>
+      <tr data-tags="people leadership"><td>People operations at scale</td><td>100+ person team, six years: full hiring-to-offboarding lifecycle, 5-track onboarding program, performance management, culture; top 5 of 30 Portland stores sustained across multiple leadership transitions; CE rotation: 30+ stakeholders driven entirely by relationship and accountability infrastructure</td></tr>
+      <tr data-tags="knowledge pm"><td>Information architecture and taxonomy design</td><td>Archive: 6 disconnected repos to unified taxonomy with named XF ownership and governance; NPI dashboard: 141 programs, 14 LOBs, filterable by any dimension from one source; L&amp;D programs built modular and searchable, not just deliverable</td></tr>
+      <tr data-tags="knowledge cos"><td>Documentation built to outlive its author</td><td>COVID reopening protocols ran four years under new leadership; Archive governance and intake process designed for successors; NPI dashboard with full refresh automation and handoff documentation; CE rotation: every deliverable packaged for the incoming team before departure</td></tr>
+      <tr data-tags="ai cos"><td>Operational system design and automation</td><td>Text expansion system (342 keystrokes = 55,000+ chars output); MCP server with persistent context across all active programs; NPI dashboard auto-refresh pipeline; Chief of Operations: website, financial tracking, bookkeeping, tax prep — zero additional staff</td></tr>
+      <tr data-tags="knowledge leadership cos"><td>Governance frameworks and XF ownership</td><td>Archive: defined owner roles, review cadences, and intake process where none existed; NPI dashboard: accountability surfaced at LOB level by design, not by exception; COVID reopening: protocols designed so any leader could run them independently; CE rotation: escalation paths and stakeholder accountability built without positional authority</td></tr>
     </tbody>
   </table>
 
@@ -1653,10 +1756,14 @@
   <div class="creds-card reveal">
     <div class="cred-row"><span class="cred-label">B.A. Classical Civilization, Honors</span><span class="cred-value">University of Vermont &nbsp;&middot;&nbsp; NCAA Division I Varsity Lacrosse</span></div>
     <div class="cred-row"><span class="cred-label">Agile Leadership Specialization</span><span class="cred-value">University of Colorado System &nbsp;&middot;&nbsp; 2023&ndash;2026</span></div>
-    <div class="cred-row"><span class="cred-label">Apple Enterprise AI Fluency</span><span class="cred-value">Apple enterprise AI literacy certification &nbsp;&middot;&nbsp; Claude Code &nbsp;&middot;&nbsp; May 2026</span></div>
-    <div class="cred-row"><span class="cred-label">In-Store Guest Trainer</span><span class="cred-value">Adult Learning Principles &nbsp;&middot;&nbsp; 9-month instructional design residency</span></div>
+    <div class="cred-row"><span class="cred-label">Apple EPx AI Fluency</span><span class="cred-value">Apple enterprise AI fluency program &nbsp;&middot;&nbsp; Claude Code &nbsp;&middot;&nbsp; May 2026</span></div>
+    <div class="cred-row"><span class="cred-label">In-Store Guest Trainer</span><span class="cred-value">Adult Learning Principles &nbsp;&middot;&nbsp; 9-month onboarding residency</span></div>
     <div class="cred-row"><span class="cred-label">Spanish</span><span class="cred-value">Conversational fluency, in progress</span></div>
     <div class="cred-row"><span class="cred-label">Tools &amp; Software</span><span class="cred-value">Freeform &nbsp;&middot;&nbsp; Google Docs &nbsp;&middot;&nbsp; Tableau &nbsp;&middot;&nbsp; Asana &nbsp;&middot;&nbsp; Keynote &nbsp;&middot;&nbsp; Excel &nbsp;&middot;&nbsp; Google Sheets &nbsp;&middot;&nbsp; Numbers &nbsp;&middot;&nbsp; Canva &nbsp;&middot;&nbsp; Wix &nbsp;&middot;&nbsp; CapCut &nbsp;&middot;&nbsp; iMovie &nbsp;&middot;&nbsp; PowerPoint &nbsp;&middot;&nbsp; Word &nbsp;&middot;&nbsp; Claude Code (MCP server build)</span></div>
+  </div>
+
+  <div class="tab-nudge reveal">
+    <button class="nudge-btn" onclick="showTab('portfolio', null)">See what I've built &rarr;</button>
   </div>
 
   <div class="section-label reveal">Contact</div>
@@ -1664,13 +1771,19 @@
     <strong>Portland, OR</strong>
     <a href="mailto:hi.em.allen@gmail.com">hi.em.allen@gmail.com</a>
     <a href="https://linkedin.com/in/em-allen-13b0a768">LinkedIn ↗</a>
-    <a href="resume.html" target="_blank">Resume ↗</a>
+    <a href="resume.pdf" download="Em_Allen_Resume.pdf">Resume PDF ↓</a>
   </div>
 
 </div>
 
 <!-- ═══ PORTFOLIO ═══ -->
 <div class="tab-panel" id="panel-portfolio" role="tabpanel">
+
+  <div class="pull-quote reveal">
+    <div class="pull-quote-line">None of this was assigned.</div>
+    <div class="pull-quote-line accent">All of it still runs without me.</div>
+    <div class="pull-quote-meta">7 systems built &nbsp;&middot;&nbsp; 0 from a template &nbsp;&middot;&nbsp; all designed for handoff</div>
+  </div>
 
   <div class="section-label reveal">What I've Built</div>
 
@@ -1729,13 +1842,13 @@
         <rect x="680" y="234" width="60" height="10" rx="5" fill="rgba(255,214,10,0.2)"/>
       </svg>
       <div class="project-content">
-        <div class="project-tag">Apple Corporate Rotation &nbsp;&middot;&nbsp; 2026</div>
+        <div class="project-tag">CE Rotation &nbsp;&middot;&nbsp; 2026</div>
         <div class="project-name">NPI Program Visibility Dashboard</div>
         <div class="project-role-chips"><span>Program Management</span><span>Ops Visibility</span><span>Stakeholder Alignment</span></div>
-        <div class="project-one-liner">Replaced a multi-tab Keynote deck that 20+ team members were manually updating every week with a live dashboard tracking dozens of concurrent programs across multiple lines of business: filterable by program, grouped by LOB, automated accountability gap surfacing, CSV export. Presented to VP-level leadership and handed off to the successor team as their official ongoing NPI status tool, with full refresh automation built in so no briefing is needed.</div>
+        <div class="project-one-liner">Replaced a 14-tab Keynote deck that 20+ team members were manually updating every week with a live dashboard tracking 141 programs across 14 lines of business: filterable by program, grouped by LOB, automated accountability gap surfacing, CSV export. Presented to VP-level leadership and handed off to the successor team as their official ongoing NPI status tool, with full refresh automation built in so no briefing is needed.</div>
         <div>
           <span class="project-pill">Still in use</span>
-          <span style="font-size:11px;color:var(--text-3);margin-left:8px;">Deployed on internal network</span>
+          <a href="https://packaging-npi-dashboard.multidev.apple.com" class="project-link-btn" target="_blank">View live ↗</a>
         </div>
       </div>
     </div>
@@ -1805,10 +1918,12 @@
         <div class="project-tag">Genius Bar Management &nbsp;&middot;&nbsp; 2018&ndash;2024</div>
         <div class="project-name">Genius Bar L&amp;D Infrastructure</div>
         <div class="project-role-chips"><span>L&amp;D</span><span>Org Effectiveness</span><span>Behavior Change</span></div>
-        <div class="project-one-liner">Built the complete learning infrastructure for a 100+ person org from scratch: custom competency frameworks (Lead and Manager levels), 10-week coaching curriculum for emerging leaders, 5-track onboarding covering every role from Specialist to Manager, COVID-era crisis operations playbook. Coaching cohort shifted from 1 in 20 to 1 in 10 on a target behavior in 90 days, tracked at 30/60/90-day intervals (Kirkpatrick Level 3-4). Not a new program: a measurable culture shift. Every system designed for handoff from day one. All still running under new leadership.</div>
+        <div class="project-one-liner">Built 6 learning systems for a 100+ person org from scratch: competency frameworks, coaching curriculum, 5-track onboarding, crisis playbook. One coaching cohort doubled a key team behavior rate in 90 days, tracked at Kirkpatrick Level 3-4. Every system designed to outlast me. All still running.</div>
+        <div class="project-evidence"><strong>2x behavior rate in 90 days</strong>, measured at Kirkpatrick Level 3-4. 6 systems across 6 years. All still running under the next leader.</div>
         <span class="project-pill">6+ systems, all outlived my tenure</span>
         <span class="project-pill">Lominger-derived</span>
         <span class="project-pill">Kirkpatrick Level 3-4</span>
+        <div style="margin-top:12px;"><a href="javascript:void(0)" class="project-link-btn" onclick="navigateToStory('anchor-manage')">See the story &rarr;</a></div>
       </div>
     </div>
 
@@ -1842,7 +1957,9 @@
         <div class="project-name">Diagnostic Learning Design</div>
         <div class="project-role-chips"><span>L&amp;D</span><span>Behavior Change</span><span>Instructional Design</span></div>
         <div class="project-one-liner">Technicians were avoiding certain repairs. The obvious answer was training. The real answer was a confidence gap with a specific failure mode — a lecture wouldn't touch it. Built bingo cards instead: repair types as squares, played in teams, with a rotating facilitator built into the design. The game surfaced who was avoiding what without anyone having to say it out loud. Once the gap was visible, we coached the actual thing. Behavior changed. Still running.</div>
+        <div class="project-evidence">The artifact: <strong>Same Unit Repair Bingo.</strong> Surfaced each person's gap without anyone having to name it out loud. Coaching landed on the actual problem. Still running after handoff.</div>
         <span class="project-pill">Diagnosis before solution</span>
+        <div style="margin-top:12px;"><a href="javascript:void(0)" class="project-link-btn" onclick="navigateToStory('anchor-coaching')">See the story &rarr;</a></div>
       </div>
     </div>
 
@@ -1878,11 +1995,13 @@
         <rect x="186" y="156" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.9)"/>
       </svg>
       <div class="project-content">
-        <div class="project-tag">Apple Corporate Rotation &nbsp;&middot;&nbsp; 2026</div>
+        <div class="project-tag">CE Rotation &nbsp;&middot;&nbsp; 2026</div>
         <div class="project-name">Packaging Knowledge Archive</div>
         <div class="project-role-chips"><span>Knowledge Management</span><span>Org Design</span><span>Executive Influence</span></div>
         <div class="project-one-liner">Self-initiated. 6 disconnected repos no one had mapped. Built location taxonomy, governance model, and cross-functional ownership structure: the org's first knowledge management system for this category. Funded executive briefing in under 6 months. Zero positional authority.</div>
+        <div class="project-evidence"><strong>10-minute executive briefing</strong> turned a self-initiated discovery into a funded cross-functional initiative. Stakeholders: Legal, MarCom, Engineering, Apple University. 6 disconnected repos to one governed system. First cross-functional knowledge governance structure for this product category at Apple.</div>
         <span class="project-pill">Zero positional authority</span>
+        <div style="margin-top:12px;"><a href="javascript:void(0)" class="project-link-btn" onclick="navigateToStory('anchor-archive')">See the story &rarr;</a></div>
       </div>
     </div>
 
@@ -1919,11 +2038,13 @@
         <rect x="336" y="111" width="20" height="2" rx="1" fill="rgba(255,255,255,0.6)"/>
       </svg>
       <div class="project-content">
-        <div class="project-tag">Apple Corporate Rotation &nbsp;&middot;&nbsp; 2026</div>
+        <div class="project-tag">CE Rotation &nbsp;&middot;&nbsp; 2026</div>
         <div class="project-name">AI Voice-to-Notes Pipeline</div>
         <div class="project-role-chips"><span>AI Operations</span><span>PM Tooling</span><span>Systems Design</span></div>
         <div class="project-one-liner">Custom MCP server. Voice memo to structured meeting notes in under 5 minutes. Persistent context that compounds over time.</div>
+        <div class="project-evidence">Voice to structured output: <strong>under 5 minutes end-to-end.</strong> Covered all 3 concurrent programs across the full 6-month rotation. Context compounds session to session: the longer it runs, the more accurate and specific it gets.</div>
         <span class="project-pill">Under 5 min end-to-end</span>
+        <div style="margin-top:12px;"><a href="javascript:void(0)" class="project-link-btn" onclick="showTab('how', null)">See the workflow &rarr;</a></div>
       </div>
     </div>
 
@@ -1963,11 +2084,13 @@
         <rect x="232" y="223" width="62" height="3" rx="1.5" fill="rgba(255,255,255,0.28)"/>
       </svg>
       <div class="project-content">
-        <div class="project-tag">Apple Corporate Rotation &nbsp;&middot;&nbsp; 2026</div>
+        <div class="project-tag">CE Rotation &nbsp;&middot;&nbsp; 2026</div>
         <div class="project-name">Text Expansion System</div>
         <div class="project-role-chips"><span>AI Operations</span><span>Productivity</span><span>Workflow Automation</span></div>
         <div class="project-one-liner">342 keystrokes, 55,000+ characters of structured PM output. Status updates, emails, agendas, follow-ups. Daily active use, full rotation.</div>
+        <div class="project-evidence"><strong>342 keystrokes, 55,000+ characters.</strong> What it made possible: a full status update in 3 minutes, a stakeholder email in 90 seconds, a meeting agenda without starting from blank. Daily active use across 3 concurrent programs for 6 months.</div>
         <span class="project-pill">342 → 55,000+ chars</span>
+        <div style="margin-top:12px;"><a href="javascript:void(0)" class="project-link-btn" onclick="showTab('how', null)">See the workflow &rarr;</a></div>
       </div>
     </div>
 
@@ -2021,11 +2144,13 @@
         <path d="M336,220 L339,223 L346,216" stroke="white" stroke-width="2" fill="none"/>
       </svg>
       <div class="project-content">
-        <div class="project-tag">Apple Corporate Rotation &nbsp;&middot;&nbsp; 2026</div>
+        <div class="project-tag">CE Rotation &nbsp;&middot;&nbsp; 2026</div>
         <div class="project-name">AI Onboarding Curriculum</div>
         <div class="project-role-chips"><span>L&amp;D</span><span>Change Management</span><span>Instructional Design</span></div>
         <div class="project-one-liner">5-document package on adult learning theory, accessibility standards, and scrum. Designed Kirkpatrick Level 3 evaluation checkpoints at weeks 1, 4, and 8: behavior change in the workflow, not just survey scores or completion rates. Audited my own draft, found 7 structural gaps, rebuilt. Complete instructional design cycle.</div>
+        <div class="project-evidence">Self-audited the first draft, found <strong>7 structural gaps,</strong> rebuilt from scratch. Kirkpatrick Level 3 checkpoints at weeks 1, 4, and 8: behavior change in the workflow, not survey scores or completion rates.</div>
         <span class="project-pill">Self-audited and rebuilt</span>
+        <div style="margin-top:12px;"><a href="javascript:void(0)" class="project-link-btn" onclick="navigateToStory('anchor-coaching')">See the story &rarr;</a></div>
       </div>
     </div>
 
@@ -2061,6 +2186,7 @@
       <div class="project-content">
         <div class="project-tag">This Page &nbsp;&middot;&nbsp; 2026</div>
         <div class="project-name">Portfolio Site</div>
+        <div class="project-role-chips"><span>Front-End Development</span><span>AI-Augmented Build</span><span>Systems Design</span></div>
         <div class="project-one-liner">Single-file HTML, no framework. Custom dark design system, tabbed architecture, scroll reveal animations, and an AI-integrated build pipeline. Built with Claude Code. You're looking at the output.</div>
         <span class="project-pill">Built with Claude Code</span>
       </div>
@@ -2068,12 +2194,16 @@
 
   </div>
 
+  <div class="tab-nudge reveal">
+    <button class="nudge-btn" onclick="showTab('how', null)">See how I think &rarr;</button>
+  </div>
+
   <div class="section-label reveal">Contact</div>
   <div class="contact-bar reveal">
     <strong>Portland, OR</strong>
     <a href="mailto:hi.em.allen@gmail.com">hi.em.allen@gmail.com</a>
     <a href="https://linkedin.com/in/em-allen-13b0a768">LinkedIn ↗</a>
-    <a href="resume.html" target="_blank">Resume ↗</a>
+    <a href="resume.pdf" download="Em_Allen_Resume.pdf">Resume PDF ↓</a>
   </div>
 
 </div>
@@ -2081,43 +2211,81 @@
 <!-- ═══ HOW I THINK ═══ -->
 <div class="tab-panel" id="panel-how" role="tabpanel">
 
+  <div class="pull-quote reveal">
+    <div class="pull-quote-line">The presenting problem</div>
+    <div class="pull-quote-line accent">is never the real one.</div>
+    <div class="pull-quote-meta">Diagnostic first &nbsp;&middot;&nbsp; solution second &nbsp;&middot;&nbsp; always</div>
+  </div>
+
   <div class="section-label reveal">The Diagnostic Instinct</div>
   <div class="approach-grid">
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-coaching')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-coaching')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
       <div class="approach-label">How I enter a problem</div>
       <p>I ask what's actually broken before I build anything. The presenting problem is almost never the real one. Same Unit Repair Bingo didn't start as a game; it started as a question about why technicians were avoiding certain repairs.</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-manage')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-manage')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+      </div>
       <div class="approach-label">How I coach</div>
       <p>Process, confidence, or wrong mental model? Three different root causes. Three different interventions. The targeted thing is the only thing that actually changes behavior. Not a one-size training. The specific thing.</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-covid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-covid')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"/><line x1="7.5" y1="11" x2="9.5" y2="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="7.5" y1="13" x2="9.5" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="14.5" y1="7" x2="16.5" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="14.5" y1="17" x2="16.5" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
       <div class="approach-label">How I build systems</div>
       <p>Everything designed for handoff from day one. If it requires me to maintain it, it isn't finished. The goal is a system that runs without me, with feedback loops built in and clear ownership transferred before I leave.</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-connection')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-connection')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/><path d="M8 12h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M14 9l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
       <div class="approach-label">How I move without authority</div>
       <p>Build the visibility and trust that make accountability the easier choice. When people can see the full picture and understand why it matters, they move. Positional authority is just one way to create motion. Rarely the most effective one.</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
   </div>
 
   <div class="section-label reveal">How I Work at the Org Level</div>
   <div class="approach-grid">
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-manage')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-manage')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="2" width="6" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="17" width="6" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="17" width="6" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="7" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="5" y1="12" x2="5" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="19" y1="12" x2="19" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
       <div class="approach-label">How I diagnose org problems</div>
       <p>The same diagnostic instinct that works on individuals scales to teams and organizations. Is this a process problem, a clarity problem, a trust problem, or a wrong-frame problem? Different root cause, different intervention. I map the org before I prescribe the fix.</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-covid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-covid')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M21 3l-4 0 0 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
       <div class="approach-label">How I approach change</div>
       <p>Ambiguity to operating system is a sequence: align stakeholders on the problem before proposing solutions, build the minimum viable process, test under real conditions, document for handoff. I've run that sequence in a crisis (COVID playbook in two weeks) and in a slow burn (Archive: six months, zero positional authority, funded pilot at the end).</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-battery')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-battery')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,12 5,12 7,6 9,18 11,10 13,14 15,12 22,12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
       <div class="approach-label">How I run the rhythm</div>
       <p>Operating cadence is infrastructure. Weekly reviews, monthly cycles, quarterly planning, annual calibration: each one is an opportunity to surface the right information to the right people at the right moment. I've owned that cadence for a 100+ person org for six years. The skill transfers.</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-connection')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-connection')">
+      <div class="approach-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M7.8 16.2a6 6 0 0 1 0-8.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16.2 7.8a6 6 0 0 1 0 8.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M5 19a9 9 0 0 1 0-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M19 5a9 9 0 0 1 0 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
       <div class="approach-label">How I function as a force multiplier</div>
-      <p>The goal is always to make the people around me more effective. That means building context portability (any stakeholder, any program, current state in 60 seconds), surfacing the right escalation before it becomes a crisis, and removing myself from loops I don't need to own. I'm most useful when I'm least visible.</p>
+      <p>The goal is always to make the people around me more effective. Moved a three-way budget standoff forward without owning the answer. Surfaced two programs to red before anyone else called it. Removed myself from a coordination loop when the right call was to step back. I'm most useful when I'm least visible.</p>
+      <span class="story-hint">See the story &#8594;</span>
     </div>
   </div>
 
@@ -2176,8 +2344,8 @@
 
   <div class="section-label reveal">What I'm Building Toward</div>
   <div class="text-card reveal">
-    <p>The work I want sits at the intersection of people, systems, and organizational health: Enablement and L&amp;D, AI Adoption, Sales and Revenue Enablement, and Change Management (building systems that change behavior, not just deliver content), Program Management (cross-functional alignment without authority), Org Effectiveness and Knowledge Management (diagnosing the real problem before prescribing the fix; building the infrastructure that captures what the org knows), Business Operations (owning the rhythm of the business), Chief of Staff (making the people around me more effective at the highest leverage point).</p>
-    <p>These aren't five different jobs. They're the same instinct applied at different altitudes. Find what's fragmented. Build what consolidates it. Make sure it runs when I'm not there.</p>
+    <p>These aren't separate functions. They're the same instinct applied at different altitudes. Find what's fragmented. Build what consolidates it. Make sure it runs when I'm not there.</p>
+    <p>The work I want sits at the intersection of people, systems, and organizational health: Enablement and L&amp;D, AI Adoption, Change Management, Program Management, Org Effectiveness and Knowledge Management, Business Operations, Chief of Staff. Different titles. Same through-line.</p>
     <p>The corporate rotation was proof of concept: director-level work, no title, global team, zero positional authority. Six systems built. All still running. I'm looking for the place where that compounds.</p>
     <p>For Chief of Staff specifically: I work best with principals who think in systems, move faster than their org can document, and need someone who can hold the full picture so they can stay in the decision. Not a scheduler. Not a gatekeeper. The person who makes the executive more effective at the most important moment.</p>
   </div>
@@ -2187,7 +2355,7 @@
     <strong>Portland, OR</strong>
     <a href="mailto:hi.em.allen@gmail.com">hi.em.allen@gmail.com</a>
     <a href="https://linkedin.com/in/em-allen-13b0a768">LinkedIn ↗</a>
-    <a href="resume.html" target="_blank">Resume ↗</a>
+    <a href="resume.pdf" download="Em_Allen_Resume.pdf">Resume PDF ↓</a>
   </div>
 
 </div>
@@ -2196,11 +2364,67 @@
 </main>
 
 <footer class="site-footer">
-  Em Allen &nbsp;&middot;&nbsp; Portland, OR &nbsp;&middot;&nbsp; Updated June 8, 2026
+  Em Allen &nbsp;&middot;&nbsp; Portland, OR &nbsp;&middot;&nbsp; Available July 2026 &nbsp;&middot;&nbsp; Updated June 8, 2026
 </footer>
 
+<a href="mailto:hi.em.allen@gmail.com" class="float-contact" id="floatContact">
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="white" stroke-width="1.3"/><path d="M1 4L7 8L13 4" stroke="white" stroke-width="1.3"/></svg>
+  Get in touch
+</a>
 <script>
   let storyIndex = 0;
+
+  function goToContact() {
+    const panels = document.querySelectorAll('.tab-panel');
+    const storyPanel = document.getElementById('panel-story');
+    const current = document.querySelector('.tab-panel.active');
+    const scrollToBar = () => {
+      const bar = storyPanel.querySelector('.contact-bar');
+      if (!bar) return;
+      const headerH = document.querySelector('.site-header').offsetHeight;
+      const top = bar.getBoundingClientRect().top + window.scrollY - headerH - 16;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    };
+    if (current === storyPanel) { scrollToBar(); return; }
+    document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+    const storyBtn = document.querySelector('[data-tab="story"]');
+    if (storyBtn) { storyBtn.classList.add('active'); storyBtn.setAttribute('aria-selected','true'); }
+    if (current) { current.classList.add('exiting'); }
+    setTimeout(() => {
+      panels.forEach(p => p.classList.remove('active', 'exiting'));
+      storyPanel.classList.add('active');
+      initReveal();
+      setTimeout(scrollToBar, 80);
+    }, 200);
+  }
+
+  function navigateToStory(anchorId) {
+    const panels = document.querySelectorAll('.tab-panel');
+    const storyPanel = document.getElementById('panel-story');
+    const current = document.querySelector('.tab-panel.active');
+    const scrollToAnchor = () => {
+      const el = document.getElementById(anchorId);
+      if (!el) return;
+      const headerH = document.querySelector('.site-header').offsetHeight;
+      const top = el.getBoundingClientRect().top + window.scrollY - headerH - 16;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    };
+    if (current === storyPanel) {
+      scrollToAnchor();
+      return;
+    }
+    document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+    const storyBtn = document.querySelector('[data-tab="story"]');
+    if (storyBtn) { storyBtn.classList.add('active'); storyBtn.setAttribute('aria-selected','true'); }
+    if (current) { current.classList.add('exiting'); }
+    setTimeout(() => {
+      panels.forEach(p => p.classList.remove('active', 'exiting'));
+      storyPanel.classList.add('active');
+      initReveal();
+      setTimeout(scrollToAnchor, 80);
+    }, 200);
+  }
+
   function goStory(idx) {
     const stories = document.querySelectorAll('.throughline-story');
     const dots = document.querySelectorAll('.carousel-dot');
@@ -2218,8 +2442,14 @@
     const current = document.querySelector('.tab-panel.active');
     const next = document.getElementById('panel-' + tab);
     if (!next) return;
+    const scrollToContent = () => {
+      const content = document.querySelector('.content');
+      const headerH = document.querySelector('.site-header').offsetHeight;
+      const top = content.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    };
     if (current === next) {
-      next.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      scrollToContent();
       return;
     }
     document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
@@ -2230,8 +2460,8 @@
       panels.forEach(p => p.classList.remove('active', 'exiting'));
       next.classList.add('active');
       initReveal();
-      next.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 180);
+      scrollToContent();
+    }, 200);
   }
 
   document.addEventListener('keydown', function(e) {
@@ -2313,9 +2543,5 @@
     floatBtn.classList.toggle('visible', window.scrollY > 300);
   }, { passive: true });
 </script>
-<a href="mailto:hi.em.allen@gmail.com" class="float-contact" id="floatContact">
-  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="white" stroke-width="1.3"/><path d="M1 4L7 8L13 4" stroke="white" stroke-width="1.3"/></svg>
-  Get in touch
-</a>
 </body>
 </html>
