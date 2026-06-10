@@ -122,3 +122,22 @@ We simulated 10 recursive passes of the "God-Tier" audit prompt, acting as a hos
 8. **Visual Anchors for ADHD/Dyslexia:** The metric pills are color-coded to match the timeline dots, creating a subconscious visual anchor that guides the eye down the page in an F-pattern.
 9. **Cognitive Load Reduction:** By tightening the bullet points in the Curiosity Gap phase, we reduced the word count of dense paragraphs by 15%, making the site significantly easier to scan.
 10. **Global Synchronization:** All 10 files (HTML profiles, HTML resumes, Text resumes) were updated simultaneously via Python script to ensure 100% narrative consistency across the entire ecosystem.
+
+
+## The "Murder Board" Execution (June 9, 2026 - God-Tier Pass)
+
+We ran the 10-pass "Murder Board" simulation, pitting the portfolio against hostile personas (Stanford MBA Chief of Staff, L&D Director, ADHD UX Auditor). We ruthlessly purged the bottom 20% of the content and ran every surviving bullet point through a 3-layer "So What?" translation matrix to extract pure business impact.
+
+### 🔪 "Kill Your Darlings" (The Bottom 20% Purge)
+1. **Killed the Lacrosse Coaching:** A decade-old high school sports credential dilutes the corporate enablement narrative. It was amputated.
+2. **Killed the "14th Conversation" Card:** While a great management story, it sounded too much like retail HR disciplinary action. We deleted it to tighten the grid to 3 massive, high-impact corporate/crisis stories.
+3. **Killed the "Ovation Award" Fluff:** Removed the explanation ("approximately 2 recipients per category"). If you have to explain how rare an award is, it loses its power.
+
+### 🧠 The "So What?" Translation Matrix
+We rewrote the core bullet points to focus on the *system* and the *result*, leaving the logistics for the interview:
+1. **NPI Dashboard:** *Old:* "Built a live program visibility dashboard... replaced a 14-tab Keynote deck." -> *New:* **"Engineered a live NPI portfolio dashboard (141 programs, 14 LOBs), eliminating manual reporting for 20+ global stakeholders and providing VP-level leadership with real-time, automated accountability surfacing."**
+2. **COVID Playbook:** *Old:* "Led COVID reopening... rebuilt the operating model." -> *New:* **"Executed enterprise-scale change management during COVID reopening: authored the operational playbook from a blank page in a total regulatory void."**
+3. **Same Unit Repair Bingo:** *Old:* "Created Same Unit Repair Bingo... a gamified competency diagnostic." -> *New:* **"Designed and deployed a gamified diagnostic system that surfaced critical operational blind spots and technical skill gaps without triggering employee defensiveness."**
+
+### 👁️ Neurodivergent UX Optimization
+- **Bolding the Competency Table:** The "How I Map to Roles" table was a wall of text. We injected `<strong>` tags into the exact deliverables (e.g., **Archive initiative**, **live NPI dashboard**) so a dyslexic or ADHD scanner can read down the column in 3 seconds and absorb the proof.
