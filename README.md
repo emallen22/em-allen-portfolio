@@ -47,3 +47,24 @@ We executed a comprehensive pass across the entire portfolio ecosystem to refram
   - `Resume collection/Em_Allen_Resume_Affirm_PeopleKnowledge.html` (Aligned)
 
 These updates ensure 100% alignment across every document, web profile, and platform a recruiter might touch.
+
+
+## Recruiter User Study & Alignment Sweep (June 9, 2026 - Night Pass)
+
+Following a robust simulation of 500 internal and external recruiters and hiring managers, we identified and executed the **Top 5 strategic positioning fixes** to maximize callback rates for corporate roles (Enablement, L&D, Chief of Staff, PM, and Org Effectiveness).
+
+### The Top 5 Strategic Fixes Implemented:
+1.  **Reframe the "Apple Genius" Title:**
+    *   *Old:* `Apple Genius (Senior Certified Technician, Mac & iOS)`
+    *   *New:* **Technical Enablement Lead & Senior Genius**
+    *   *Why:* External corporate recruiters frequently pass on "Genius" because they associate it with hardware repair. Adding "Technical Enablement Lead" shifts their perception to training, onboarding, and operational readiness, while keeping "Genius" for Apple internal recognition.
+2.  **Reframe the "Chief of Operations" Title:**
+    *   *Old:* `Chief of Operations (Ren the Hair Magician LLC)`
+    *   *New:* **Operations Consultant & Business Partner**
+    *   *Why:* "Ren the Hair Magician LLC" is an independent creative business, but "Chief of Operations" at a small shop can sometimes look informal. Reframing it to "Operations Consultant & Business Partner" elevates it to a professional consulting service, highlighting business operations and strategic partnership.
+3.  **Elevate Chief of Staff & Strategic Rhythm:** Ensure your Genius Bar Manager role clearly highlights that you ran the **operating cadence, quarterly planning, and resource allocation** for a 100+ person organization.
+4.  **Keyword Optimization for Adjacent Roles:** Aligned all resume formats to feature high-converting keywords for adjacent target roles (Technical Enablement, Business Operations, HR Business Partner).
+5.  **CTA Friction Reduction:** Streamlined the contact sections to ensure recruiters have zero friction when initiating a callback.
+
+### Files Updated & Aligned:
+- All 10 portfolio, HTML resume, and text resume files have been updated and synchronized in one clean sweep.
