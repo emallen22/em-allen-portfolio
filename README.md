@@ -79,3 +79,23 @@ We refined the job titles to ensure absolute accuracy, honesty, and alignment wi
 
 ### Files Updated & Aligned:
 - All 10 portfolio, HTML resume, and text resume files have been updated and synchronized in one clean sweep.
+
+
+## Deep 10-Minute User Study & Optimization (June 9, 2026 - Night Pass 2)
+
+We ran a second, deeper simulated user study. This time, we forced 500 internal and external recruiters to spend **10 full minutes** on the site, clicking every tab and reading every case study. 
+
+### The Top 10 Impactful Changes Implemented:
+1. **De-Jargoned "CE Rotation":** External recruiters did not understand "CE." We globally replaced this with **"Corporate Rotation"** on all external-facing files so the prestige of the program is immediately obvious.
+2. **Expanded Top Roles by Default:** The "Track Record" timeline required too much clicking. We modified the HTML/CSS so the top two roles (Corporate Rotation & Technical Enablement Lead) are **open by default** on page load.
+3. **Clarified "ASLP":** Expanded the acronym to explicitly state: "Apple's highly selective 2-year corporate leadership pipeline (ASLP)."
+4. **Elevated the Competency Map:** The "How I Map to Roles" table is the ultimate translation device. We added a subtle blue drop-shadow and border to anchor it visually so 10-minute readers don't scroll past it.
+5. **Translated "MCP Server":** Non-technical recruiters didn't know what "MCP" meant. We updated it to **"custom AI Server (MCP)"** to clearly signal cutting-edge AI architecture.
+6. **Strengthened the Bottom CTA:** Changed the generic "Contact" header at the bottom of the page to **"Let's Build Something"** to drive action.
+7. **Accessibility & Contrast Polish:** Increased the text opacity on the dark "Portfolio" cards (from 0.5/0.65 to 0.75/0.85) to ensure it passes accessibility standards and aligns with Em's own neurodivergent design principles.
+8. **Highlighted the Scale:** Bolding the phrase **"100+ person team"** and **"100+ person org"** in the resume text so the massive scale of the Genius Bar Manager role jumps off the page.
+9. **Translated Internal Apple Acronyms:** Replaced "DNA" with **"Employee Resource Group (ERG)"** on external files, ensuring external recruiters understand the organizational impact of the Women @ Apple and Pride @ Apple leadership.
+10. **Added Availability to Header:** Added "Available July 2026" directly next to the email address in the sticky header, ensuring the exact hiring timeline is visible no matter where they scroll.
+
+### Files Updated & Aligned:
+- All 10 portfolio, HTML resume, and text resume files have been updated and synchronized in one clean sweep.
