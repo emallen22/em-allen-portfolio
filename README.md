@@ -68,3 +68,14 @@ Following a robust simulation of 500 internal and external recruiters and hiring
 
 ### Files Updated & Aligned:
 - All 10 portfolio, HTML resume, and text resume files have been updated and synchronized in one clean sweep.
+
+
+## Job Title Refinements (June 9, 2026 - Final Pass)
+
+We refined the job titles to ensure absolute accuracy, honesty, and alignment with Em's actual roles and responsibilities:
+
+1.  **Technical Enablement Lead & Genius:** Removed "Senior" from the Genius title to accurately reflect the official role while retaining the high-impact "Technical Enablement Lead" prefix.
+2.  **Co-Owner & Operations Lead (Ren the Hair Magician LLC):** Replaced "Operations Consultant & Business Partner" with "Co-Owner & Operations Lead" to accurately reflect Em's co-ownership of the business and hands-on execution of the website, marketing support, and scheduling.
+
+### Files Updated & Aligned:
+- All 10 portfolio, HTML resume, and text resume files have been updated and synchronized in one clean sweep.
