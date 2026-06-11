@@ -405,21 +405,18 @@
   .carousel-dot.active { background: var(--blue); }
 
   @media (min-width: 900px) {
-    .throughline-wrap {
-      display: flex;
-      gap: 20px;
-      align-items: stretch;
+    .throughline-story {
+      display: block !important;
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--divider);
     }
-    .throughline-wrap .throughline-story {
-      display: flex !important;
-      flex-direction: column;
-      flex: 1;
-    }
-    .throughline-wrap .throughline-story .intro-strip {
-      flex: 1;
+    .throughline-story:last-of-type {
       margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
     }
-    .throughline-wrap .throughline-nav {
+    .throughline-nav {
       display: none;
     }
   }
@@ -1074,9 +1071,9 @@
   /* ── HERO STATS ── */
   .hero-stats {
     display: flex;
-    gap: 36px;
+    gap: 28px;
     margin: 32px 0 28px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .hero-stat { display: flex; flex-direction: column; }
@@ -2295,7 +2292,7 @@
       <p>Operating cadence is infrastructure. Weekly reviews, monthly cycles, quarterly planning, annual calibration: each one is an opportunity to surface the right information to the right people at the right moment. I've owned that cadence for a 100+ person org for six years. The skill transfers.</p>
       <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-connection')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-connection')">
+    <div class="approach-card reveal" onclick="navigateToStory('anchor-authority')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-authority')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M7.8 16.2a6 6 0 0 1 0-8.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16.2 7.8a6 6 0 0 1 0 8.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M5 19a9 9 0 0 1 0-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M19 5a9 9 0 0 1 0 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
