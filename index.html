@@ -7,7 +7,7 @@
 <link rel="apple-touch-icon" href="favicon.png">
 <meta name="description" content="Em Allen: Enablement and L&D leader, Program Manager, and Org Effectiveness practitioner with 12 years at Apple. I find what's broken. I build the thing that fixes it. Available July 2026.">
 <meta property="og:title" content="Em Allen | Enablement &amp; L&amp;D Leader | Program Manager">
-<meta property="og:description" content="12 years at Apple. 3 programs, 30+ stakeholders, 6 systems built. 87/100 TMS. Available July 2026.">
+<meta property="og:description" content="12 years at Apple. 3 programs, 30+ stakeholders, 6 systems built. 48 hrs cut from new hire ramp. Available July 2026.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="photo.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -970,7 +970,7 @@
     cursor: pointer;
   }
 
-  .approach-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+  .approach-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1), inset 3px 0 0 var(--blue); }
 
   .approach-card .story-hint {
     display: inline-flex;
@@ -1157,6 +1157,81 @@
   .moment-card[data-theme="di"]      .moment-eyebrow { color: #bf5af2; }
   .moment-card[data-theme="xf"]      .moment-eyebrow { color: #3b97f5; }
 
+  /* ── SCROLL PROGRESS BAR ── */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #0071e3;
+    z-index: 1001;
+    width: 0%;
+    pointer-events: none;
+  }
+
+  /* ── ROLE FILTER ── */
+  .role-filter-wrap {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .role-filter-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.3);
+    flex-shrink: 0;
+  }
+
+  .role-chip {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.15);
+    background: rgba(255,255,255,0.8);
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.55);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+
+  .role-chip:hover { border-color: var(--blue); color: var(--blue); }
+  .role-chip.active { background: var(--blue); border-color: var(--blue); color: white; }
+
+  [data-roles].role-dim {
+    opacity: 0.22;
+    filter: grayscale(0.2);
+    transition: opacity 0.25s ease, filter 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  [data-roles].role-match {
+    transition: opacity 0.25s ease, filter 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .stat-card[data-roles].role-match {
+    box-shadow: 0 0 0 2px rgba(0,113,227,0.5), 0 4px 16px rgba(0,113,227,0.2);
+  }
+
+  .project-card[data-roles].role-match {
+    transform: translateY(-7px) scale(1.01) !important;
+    box-shadow: 0 20px 56px rgba(0,0,0,0.28) !important;
+  }
+
+  .approach-card[data-roles].role-match {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12), inset 3px 0 0 var(--blue) !important;
+  }
+
+  .moment-card[data-roles].role-match {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 56px rgba(0,0,0,0.4) !important;
+  }
+
   /* ── REDUCED MOTION ── */
   @media (prefers-reduced-motion: reduce) {
     .reveal { transition: none; opacity: 1; transform: none; }
@@ -1255,20 +1330,20 @@
     <div style="margin-top:10px;font-size:16px;font-weight:500;color:var(--text-2);letter-spacing:0.1px;max-width:560px;line-height:1.55;">Clearest value: the person who holds the whole picture so leadership can stay in the decision.</div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-value"><span class="counter" data-target="87">87</span><span class="hero-stat-suffix">/100</span></div>
-        <div class="hero-stat-label">Customer NPS <span style="font-size:10px;opacity:0.65;">(Team Member Score)</span></div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-value"><span class="counter" data-target="397">397</span></div>
-        <div class="hero-stat-label">Interactions Tracked</div>
-      </div>
-      <div class="hero-stat">
         <div class="hero-stat-value"><span class="counter" data-target="7">7</span><span class="hero-stat-suffix">yrs</span></div>
         <div class="hero-stat-label">People Leadership</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-value"><span class="counter" data-target="100">100</span><span class="hero-stat-suffix">+</span></div>
         <div class="hero-stat-label">Person Org</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value"><span class="counter" data-target="48">48</span><span class="hero-stat-suffix">hrs</span></div>
+        <div class="hero-stat-label">Cut from new hire ramp</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value"><span class="counter" data-target="6">6</span></div>
+        <div class="hero-stat-label">Systems built &amp; handed off</div>
       </div>
     </div>
     <div style="margin-top:14px;font-size:13px;color:rgba(0,0,0,0.5);letter-spacing:0.1px;max-width:560px;line-height:1.5;">Bridgeport Village is a designated Apple training store: one of a small number in the US where leadership development, coaching, and curriculum design are core functions, not incidental ones.</div>
@@ -1297,6 +1372,13 @@
         <div class="phil-title">Hand It Off Running</div>
         <div class="phil-desc">Feedback loops built in. Ownership transferred. The best work is the kind that outlives your role.</div>
       </div>
+    </div>
+    <div class="role-filter-wrap">
+      <span class="role-filter-label">Filter by role:</span>
+      <button class="role-chip" data-role="ld" onclick="setRole(this,'ld')" type="button">L&amp;D Lead</button>
+      <button class="role-chip" data-role="pm" onclick="setRole(this,'pm')" type="button">Program Manager</button>
+      <button class="role-chip" data-role="oe" onclick="setRole(this,'oe')" type="button">Org Effectiveness</button>
+      <button class="role-chip" data-role="cos" onclick="setRole(this,'cos')" type="button">Chief of Staff</button>
     </div>
     <div class="scroll-signal">
       <span>Explore</span>
@@ -1364,12 +1446,30 @@
         </div>
       </div>
     </div>
+    <div class="throughline-story" id="tl-3">
+      <div class="story-context">Leadership Origin &nbsp;&middot;&nbsp; Before Apple</div>
+      <div class="intro-strip">
+        <div class="intro-tile" data-color="blue">
+          <div class="intro-tile-label">How it started</div>
+          <div class="intro-tile-body">Began coaching lacrosse at 15. Running camps with my mother, then solo, then youth teams, then playing NCAA Division I while coaching elite club every summer. The instinct to read who was struggling and what they actually needed — built on a field, not in a conference room.</div>
+        </div>
+        <div class="intro-tile" data-color="orange">
+          <div class="intro-tile-label">What I did</div>
+          <div class="intro-tile-body">When recruiting culture started to conflict with actually caring about the athlete in front of me, I stopped. Took a barista job to learn to lead somewhere different. Shift supervisor in under a year while coaching Southridge High School as Head Coach. Followed Apple in. Recruited mid-tenure to take over Lincoln's program. Left when the parents mattered more than the players.</div>
+        </div>
+        <div class="intro-tile" data-color="teal">
+          <div class="intro-tile-label">The result</div>
+          <div class="intro-tile-body">Every diagnostic instinct, every coaching pattern, every system I have built at Apple was stress-tested on a lacrosse field first. Starbucks was where I learned that leadership is transferable across any domain. The only thing that changed at Apple was the size of the stage.</div>
+        </div>
+      </div>
+    </div>
     <div class="throughline-nav">
       <button class="carousel-btn" onclick="prevStory()" aria-label="Previous story">&#8592; Prev</button>
       <div class="carousel-dots">
         <span class="carousel-dot active" onclick="goStory(0)" aria-label="Story 1"></span>
         <span class="carousel-dot" onclick="goStory(1)" aria-label="Story 2"></span>
         <span class="carousel-dot" onclick="goStory(2)" aria-label="Story 3"></span>
+        <span class="carousel-dot" onclick="goStory(3)" aria-label="Story 4"></span>
       </div>
       <button class="carousel-btn" onclick="nextStory()" aria-label="Next story">Next &#8594;</button>
     </div>
@@ -1397,35 +1497,35 @@
   <div class="section-label reveal">Moments of Note</div>
   <div class="moment-grid">
 
-    <div class="moment-card reveal" id="anchor-battery" data-theme="crisis">
+    <div class="moment-card reveal" id="anchor-battery" data-theme="crisis" data-roles="pm cos">
       <div class="moment-eyebrow">Crisis Leadership &nbsp;&middot;&nbsp; 2018</div>
       <div class="moment-headline">Apple made a public promise to millions of customers. <span class="dim">My Genius Bar was where they came to collect.</span></div>
       <div class="moment-body">Volume exploded overnight. Most stores saw service quality collapse. I kept 100+ people coached, the queue moving, and the human connection intact. Months of sustained chaos. Zero scripts.</div>
       <div class="moment-kicker">Ovation Award for top NPS across the Pacific Northwest District, during the hardest operational stretch in a decade.</div>
     </div>
 
-    <div class="moment-card reveal" id="anchor-covid" data-theme="covid">
+    <div class="moment-card reveal" id="anchor-covid" data-theme="covid" data-roles="pm oe">
       <div class="moment-eyebrow">Ambiguity to System &nbsp;&middot;&nbsp; 2020</div>
       <div class="moment-headline">No playbook existed for reopening a 100-person Apple store in a pandemic. <span class="dim">So I wrote one.</span></div>
       <div class="moment-body">Store closed March 2020. Before the doors reopened, I had written the complete operating system: distancing protocol, health screening, zone coverage, leader coaching behaviors. Nobody had to figure it out in the moment.</div>
       <div class="moment-kicker">Ambiguity to operating system in weeks. Still running under new leadership four years later.</div>
     </div>
 
-    <div class="moment-card reveal" id="anchor-connection" data-theme="today">
+    <div class="moment-card reveal" id="anchor-connection" data-theme="today" data-roles="oe cos">
       <div class="moment-eyebrow">Partnership Without Mandate &nbsp;&middot;&nbsp; 2019&ndash;2020</div>
       <div class="moment-headline">Nobody was showing up to Today at Apple. <span class="dim">I didn't make attendance mandatory.</span></div>
       <div class="moment-body">The obvious move was mandate. Instead I embedded programming directly into my peers' business results and made attendance useful rather than obligatory. No authority. Just alignment.</div>
       <div class="moment-kicker">4x attendance in two consecutive quarters. Zero mandates issued.</div>
     </div>
 
-    <div class="moment-card reveal" id="anchor-manage" data-theme="manage">
+    <div class="moment-card reveal" id="anchor-manage" data-theme="manage" data-roles="ld oe">
       <div class="moment-eyebrow">The Fourteenth Conversation &nbsp;&middot;&nbsp; 2018&ndash;2019</div>
       <div class="moment-headline">Every time I coached a team member, the response was the same: <span class="dim">"I've never had a problem before."</span></div>
       <div class="moment-body">Holding the line means staying consistent when someone is likable, each incident looks small, and the deflection is smooth. I documented everything, coached through every pushback, and kept the work honest. The job wasn't punishment. It was protection.</div>
       <div class="moment-kicker">The hardest management work isn't the performance review. It's the fourteenth conversation.</div>
     </div>
 
-    <div class="moment-card reveal" id="anchor-authority" data-theme="xf">
+    <div class="moment-card reveal" id="anchor-authority" data-theme="xf" data-roles="pm oe cos">
       <div class="moment-eyebrow">Authority Gap &nbsp;&middot;&nbsp; CE Rotation 2026</div>
       <div class="moment-headline">The person with the answer had stopped responding. <span class="dim">The deadline hadn't.</span></div>
       <div class="moment-body">Three programs, eight global SKUs. The System EPM on the lead program had gone quiet: weeks between replies, every channel tried. The GSM was late on every deliverable, across every program, every week. No title gave me authority over either. So I built what I had: a documentation pattern, clean escalation to leadership when silence became a schedule risk, and a dashboard that made accountability gaps impossible to ignore. When the EPM changed mid-rotation, I rebuilt the working relationship with the incoming EPM in weeks and kept the program on track.</div>
@@ -1441,33 +1541,49 @@
       <div class="stat-num">12</div>
       <div class="stat-desc">years at Apple, every function</div>
     </div>
-    <div class="stat-card light reveal">
+    <div class="stat-card light reveal" data-roles="pm cos">
       <div class="stat-num">100+</div>
       <div class="stat-desc">person team led for 6 years at a training store</div>
     </div>
-    <div class="stat-card orange reveal">
+    <div class="stat-card orange reveal" data-roles="ld oe">
       <div class="stat-num">2x</div>
       <div class="stat-desc">Apple Business referral rate in 90 days flat</div>
     </div>
-    <div class="stat-card light reveal">
+    <div class="stat-card light reveal" data-roles="ld oe">
       <div class="stat-num">4x</div>
       <div class="stat-desc">Today at Apple attendance, two consecutive quarters</div>
     </div>
-    <div class="stat-card light reveal">
+    <div class="stat-card light reveal" data-roles="pm">
       <div class="stat-num">Top 5</div>
       <div class="stat-desc">of 30 Portland stores, sustained over 6 years</div>
     </div>
-    <div class="stat-card purple reveal">
+    <div class="stat-card purple reveal" data-roles="pm oe">
       <div class="stat-num">6</div>
       <div class="stat-desc">disconnected repos unified into one governed system</div>
     </div>
-    <div class="stat-card teal reveal">
+    <div class="stat-card teal reveal" data-roles="pm">
       <div class="stat-num">55k+</div>
       <div class="stat-desc">characters of PM output from 342 keystrokes</div>
     </div>
-    <div class="stat-card light reveal">
+    <div class="stat-card light reveal" data-roles="pm cos">
       <div class="stat-num">3</div>
       <div class="stat-desc">concurrent NPI programs spanning 8 active SKUs, 30+ cross-functional stakeholders globally</div>
+    </div>
+    <div class="stat-card teal reveal" data-roles="pm cos">
+      <div class="stat-num" data-target="180" data-suffix="+">180+</div>
+      <div class="stat-desc">weekly status dashboards produced and published (packaging programs, 2022&ndash;2026)</div>
+    </div>
+    <div class="stat-card blue reveal" data-roles="ld">
+      <div class="stat-num" data-target="53">53</div>
+      <div class="stat-desc">performance reviews written across 5 consecutive cycles, 20+ employees</div>
+    </div>
+    <div class="stat-card purple reveal" data-roles="ld pm">
+      <div class="stat-num" data-target="13">13</div>
+      <div class="stat-desc">countries covered by Apple Vision Pro demo experience training</div>
+    </div>
+    <div class="stat-card orange reveal" data-roles="pm oe">
+      <div class="stat-num" data-target="55" data-suffix="%">55%</div>
+      <div class="stat-desc">shrink variance reduced in 6 weeks as interim ops lead, no handoff</div>
     </div>
   </div>
 
@@ -1496,7 +1612,7 @@
   </div>
 
   <div class="section-label reveal">Inclusion &amp; Advocacy</div>
-  <div class="moment-card reveal" data-theme="di">
+  <div class="moment-card reveal" data-theme="di" data-roles="ld">
     <div class="moment-eyebrow">One Voice, Company-Wide Impact &nbsp;&middot;&nbsp; 2019&ndash;2020</div>
     <div class="moment-headline">I escalated one piece of feedback on a company-wide product announcement.<br><span class="dim">It turned a clinical release into a company celebration.</span></div>
     <div class="moment-body">Founded Women @ Apple Retail DNA and served as its first volunteer lead; directly accelerated Pride @ Apple DNA's launch and was selected as a founding Pride @ Apple lead within nine months. Then a product announcement landed wrong. I wrote one piece of feedback, at the right moment, framed for the right audience. The release strategy changed.</div>
@@ -1800,7 +1916,7 @@
 
   <div class="project-bento">
 
-    <div class="project-card wide reveal" data-theme="dashboard">
+    <div class="project-card wide reveal" data-theme="dashboard" data-roles="pm cos">
       <svg class="project-svg-bg" viewBox="0 0 800 260" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="800" height="32" fill="rgba(255,255,255,0.1)"/>
         <rect x="16" y="9" width="72" height="14" rx="7" fill="rgba(255,255,255,0.4)"/>
@@ -1865,7 +1981,7 @@
       </div>
     </div>
 
-    <div class="project-card wide reveal" data-theme="ld">
+    <div class="project-card wide reveal" data-theme="ld" data-roles="ld oe">
       <svg class="project-svg-bg" viewBox="0 0 800 260" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <rect x="320" y="18" width="160" height="40" rx="8" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
         <rect x="340" y="29" width="120" height="5" rx="2.5" fill="rgba(255,255,255,0.85)"/>
@@ -1939,7 +2055,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" data-theme="curriculum">
+    <div class="project-card reveal" data-theme="curriculum" data-roles="ld">
       <svg class="project-svg-bg" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <rect x="60" y="40" width="280" height="130" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
         <rect x="60" y="40" width="56" height="26" fill="rgba(255,255,255,0.15)"/>
@@ -1975,7 +2091,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" data-theme="archive">
+    <div class="project-card reveal" data-theme="archive" data-roles="pm oe">
       <svg class="project-svg-bg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <line x1="200" y1="150" x2="200" y2="42" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
         <line x1="200" y1="150" x2="327" y2="87" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
@@ -2017,7 +2133,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" data-theme="pipeline">
+    <div class="project-card reveal" data-theme="pipeline" data-roles="pm cos">
       <svg class="project-svg-bg" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <line x1="70" y1="100" x2="110" y2="100" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
         <polygon points="110,96 118,100 110,104" fill="rgba(255,255,255,0.3)"/>
@@ -2060,7 +2176,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" data-theme="typinator">
+    <div class="project-card reveal" data-theme="typinator" data-roles="pm">
       <svg class="project-svg-bg" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <rect x="28" y="78" width="104" height="54" rx="10" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
         <rect x="40" y="89" width="22" height="16" rx="4" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
@@ -2106,7 +2222,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" data-theme="curriculum">
+    <div class="project-card reveal" data-theme="curriculum" data-roles="ld">
       <svg class="project-svg-bg" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <path d="M70,90 Q200,90 200,140 Q200,190 330,190" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
         <rect x="34" y="50" width="72" height="82" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
@@ -2166,7 +2282,7 @@
       </div>
     </div>
 
-    <div class="project-card reveal" data-theme="portfolio">
+    <div class="project-card reveal" data-theme="portfolio" data-roles="pm">
       <svg class="project-svg-bg" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
         <rect x="20" y="20" width="360" height="240" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
         <rect x="20" y="20" width="360" height="32" rx="10" fill="rgba(255,255,255,0.12)"/>
@@ -2232,7 +2348,7 @@
 
   <div class="section-label reveal">The Diagnostic Instinct</div>
   <div class="approach-grid">
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-coaching')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-coaching')">
+    <div class="approach-card reveal" data-roles="ld pm oe cos" onclick="navigateToStory('anchor-coaching')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-coaching')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
@@ -2240,7 +2356,7 @@
       <p>I ask what's actually broken before I build anything. The presenting problem is almost never the real one. Same Unit Repair Bingo didn't start as a game; it started as a question about why technicians were avoiding certain repairs.</p>
       <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-manage')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-manage')">
+    <div class="approach-card reveal" data-roles="ld oe" onclick="navigateToStory('anchor-manage')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-manage')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
       </div>
@@ -2248,7 +2364,7 @@
       <p>Process, confidence, or wrong mental model? Three different root causes. Three different interventions. The targeted thing is the only thing that actually changes behavior. Not a one-size training. The specific thing.</p>
       <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-covid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-covid')">
+    <div class="approach-card reveal" data-roles="pm oe" onclick="navigateToStory('anchor-covid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-covid')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"/><line x1="7.5" y1="11" x2="9.5" y2="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="7.5" y1="13" x2="9.5" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="14.5" y1="7" x2="16.5" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="14.5" y1="17" x2="16.5" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
@@ -2256,7 +2372,7 @@
       <p>Everything designed for handoff from day one. If it requires me to maintain it, it isn't finished. The goal is a system that runs without me, with feedback loops built in and clear ownership transferred before I leave.</p>
       <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-connection')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-connection')">
+    <div class="approach-card reveal" data-roles="oe cos" onclick="navigateToStory('anchor-connection')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-connection')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/><path d="M8 12h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M14 9l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
@@ -2268,7 +2384,7 @@
 
   <div class="section-label reveal">How I Work at the Org Level</div>
   <div class="approach-grid">
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-manage')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-manage')">
+    <div class="approach-card reveal" data-roles="oe" onclick="navigateToStory('anchor-manage')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-manage')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="2" width="6" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="17" width="6" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="17" width="6" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="7" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="5" y1="12" x2="5" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="19" y1="12" x2="19" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
@@ -2276,7 +2392,7 @@
       <p>The same diagnostic instinct that works on individuals scales to teams and organizations. Is this a process problem, a clarity problem, a trust problem, or a wrong-frame problem? Different root cause, different intervention. I map the org before I prescribe the fix.</p>
       <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-covid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-covid')">
+    <div class="approach-card reveal" data-roles="pm oe" onclick="navigateToStory('anchor-covid')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-covid')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M21 3l-4 0 0 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
@@ -2284,7 +2400,7 @@
       <p>Ambiguity to operating system is a sequence: align stakeholders on the problem before proposing solutions, build the minimum viable process, test under real conditions, document for handoff. I've run that sequence in a crisis (COVID playbook in two weeks) and in a slow burn (Archive: six months, zero positional authority, funded pilot at the end).</p>
       <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-battery')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-battery')">
+    <div class="approach-card reveal" data-roles="pm cos" onclick="navigateToStory('anchor-battery')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-battery')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,12 5,12 7,6 9,18 11,10 13,14 15,12 22,12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
@@ -2292,7 +2408,7 @@
       <p>Operating cadence is infrastructure. Weekly reviews, monthly cycles, quarterly planning, annual calibration: each one is an opportunity to surface the right information to the right people at the right moment. I've owned that cadence for a 100+ person org for six years. The skill transfers.</p>
       <span class="story-hint">See the story &#8594;</span>
     </div>
-    <div class="approach-card reveal" onclick="navigateToStory('anchor-authority')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-authority')">
+    <div class="approach-card reveal" data-roles="oe cos" onclick="navigateToStory('anchor-authority')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')navigateToStory('anchor-authority')">
       <div class="approach-icon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M7.8 16.2a6 6 0 0 1 0-8.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16.2 7.8a6 6 0 0 1 0 8.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M5 19a9 9 0 0 1 0-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M19 5a9 9 0 0 1 0 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
@@ -2377,9 +2493,10 @@
 </main>
 
 <footer class="site-footer">
-  Em Allen &nbsp;&middot;&nbsp; Portland, OR &nbsp;&middot;&nbsp; Available July 2026 &nbsp;&middot;&nbsp; Updated June 8, 2026
+  Em Allen &nbsp;&middot;&nbsp; Portland, OR &nbsp;&middot;&nbsp; Available July 2026 &nbsp;&middot;&nbsp; Updated June 11, 2026
 </footer>
 
+<div class="scroll-progress" id="scrollProgress"></div>
 <a href="mailto:hi.em.allen@gmail.com" class="float-contact" id="floatContact">
   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="white" stroke-width="1.3"/><path d="M1 4L7 8L13 4" stroke="white" stroke-width="1.3"/></svg>
   Get in touch
@@ -2506,6 +2623,32 @@
     });
   }
 
+  /* ── ROLE MATCH FILTER ── */
+  let activeRole = null;
+
+  function setRole(chip, role) {
+    const allCards = document.querySelectorAll('[data-roles]');
+    if (activeRole === role) {
+      activeRole = null;
+      document.querySelectorAll('.role-chip').forEach(c => c.classList.remove('active'));
+      allCards.forEach(c => c.classList.remove('role-match', 'role-dim'));
+      return;
+    }
+    activeRole = role;
+    document.querySelectorAll('.role-chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    allCards.forEach(card => {
+      const roles = (card.getAttribute('data-roles') || '').split(' ');
+      if (roles.includes(role)) {
+        card.classList.add('role-match');
+        card.classList.remove('role-dim');
+      } else {
+        card.classList.add('role-dim');
+        card.classList.remove('role-match');
+      }
+    });
+  }
+
   /* Load project background images if dropped in folder */
   document.querySelectorAll('.project-img-bg[data-src]').forEach(img => {
     const test = new Image();
@@ -2544,16 +2687,53 @@
     counterObserver.observe(c);
   });
 
+  /* Animate By the Numbers stat-nums that have data-target */
+  const statNumObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.dataset.animated) {
+        entry.target.dataset.animated = 'true';
+        const target = parseInt(entry.target.dataset.target);
+        const suffix = entry.target.dataset.suffix || '';
+        if (prefersReducedMotion) { entry.target.textContent = target + suffix; return; }
+        const duration = 1200;
+        const steps = 55;
+        let step = 0;
+        const timer = setInterval(() => {
+          step++;
+          const eased = 1 - Math.pow(1 - step / steps, 3);
+          entry.target.textContent = Math.round(eased * target) + (step >= steps ? suffix : '');
+          if (step >= steps) { entry.target.textContent = target + suffix; clearInterval(timer); }
+        }, duration / steps);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => {
+    el.textContent = '0' + (el.dataset.suffix || '');
+    statNumObserver.observe(el);
+  });
+
+  /* Stagger delay for grid children */
+  document.querySelectorAll('.moment-grid, .stat-grid, .project-bento, .approach-grid').forEach(grid => {
+    grid.querySelectorAll(':scope > [class]').forEach((child, i) => {
+      child.style.transitionDelay = (i * 70) + 'ms';
+    });
+  });
+
   function initReveal() {
     document.querySelectorAll('.tab-panel.active .reveal:not(.visible)').forEach(el => revealObserver.observe(el));
   }
 
   initReveal();
 
-  /* Float contact button */
+  /* Float contact button + scroll progress */
   const floatBtn = document.getElementById('floatContact');
+  const scrollProgress = document.getElementById('scrollProgress');
   window.addEventListener('scroll', function() {
-    floatBtn.classList.toggle('visible', window.scrollY > 300);
+    const scrollTop = window.scrollY;
+    floatBtn.classList.toggle('visible', scrollTop > 300);
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (scrollProgress && docHeight > 0) scrollProgress.style.width = (scrollTop / docHeight * 100) + '%';
   }, { passive: true });
 </script>
 </body>
