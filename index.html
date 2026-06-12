@@ -1181,26 +1181,27 @@
   }
 
   .role-filter-label {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: rgba(0,0,0,0.3);
+    letter-spacing: 0.8px;
+    color: rgba(0,0,0,0.5);
     flex-shrink: 0;
   }
 
   .role-chip {
-    padding: 6px 16px;
+    padding: 7px 18px;
     border-radius: 20px;
-    border: 1px solid rgba(0,0,0,0.15);
-    background: rgba(255,255,255,0.8);
+    border: 1.5px solid rgba(0,0,0,0.25);
+    background: rgba(255,255,255,0.9);
     font-size: 12px;
     font-weight: 600;
-    color: rgba(0,0,0,0.55);
+    color: rgba(0,0,0,0.72);
     cursor: pointer;
     transition: all 0.2s;
     font-family: inherit;
     white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   }
 
   .role-chip:hover { border-color: var(--blue); color: var(--blue); }
@@ -1306,7 +1307,7 @@
       <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-story" data-tab="story" onclick="showTab('story', this)">Story</button>
       <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-track" data-tab="track" onclick="showTab('track', this)">Track Record</button>
       <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-portfolio" data-tab="portfolio" onclick="showTab('portfolio', this)">Portfolio</button>
-      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-how" data-tab="how" onclick="showTab('how', this)">How I Think</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-how" data-tab="how" onclick="showTab('how', this)">Approach</button>
     </nav>
     <a href="mailto:hi.em.allen@gmail.com?subject=Em Allen — Reaching Out" class="header-contact">hi.em.allen@gmail.com</a>
     <a href="https://linkedin.com/in/em-allen-13b0a768" target="_blank" rel="noopener" class="header-contact" style="margin-left:6px;">LinkedIn ↗</a>
@@ -1368,7 +1369,7 @@
         <div class="phil-title">Structural Fix</div>
         <div class="phil-desc">Not a workaround. Not a band-aid. The actual fix, from blank page. If it needs me to sustain it, it isn't done.</div>
       </div>
-      <div class="phil-card" data-color="green" role="button" tabindex="0" onclick="showTab('how', null)" onkeydown="if(event.key===\'Enter\'||event.key===\' \')this.click()" title="Go to How I Think">
+      <div class="phil-card" data-color="green" role="button" tabindex="0" onclick="showTab('how', null)" onkeydown="if(event.key===\'Enter\'||event.key===\' \')this.click()" title="Go to Approach">
         <div class="phil-card-num">04</div>
         <div class="phil-label">How I Finish</div>
         <div class="phil-title">Hand It Off Running</div>
@@ -1502,6 +1503,10 @@
     <div class="coaching-kicker">Still running.</div>
   </div>
 
+  <div class="reveal" style="text-align:center;margin:0 auto 48px;max-width:500px;">
+    <a href="mailto:hi.em.allen@gmail.com?subject=Em Allen — Reaching Out" style="display:inline-flex;align-items:center;gap:10px;background:rgba(48,209,88,0.12);border:1px solid rgba(48,209,88,0.35);color:#1a8a4a;padding:12px 28px;border-radius:24px;font-size:14px;font-weight:600;text-decoration:none;">&#x25CF;&nbsp; Available July 2026 &nbsp;&middot;&nbsp; Let's talk &nbsp;&rarr;</a>
+  </div>
+
   <div class="section-label reveal">Moments of Note</div>
   <div class="moment-grid">
 
@@ -1536,7 +1541,7 @@
     <div class="moment-card reveal" id="anchor-authority" data-theme="xf" data-roles="pm oe cos">
       <div class="moment-eyebrow">Authority Gap &nbsp;&middot;&nbsp; CE Rotation 2026</div>
       <div class="moment-headline">The person with the answer had stopped responding. <span class="dim">The deadline hadn't.</span></div>
-      <div class="moment-body">Three programs, eight global SKUs. The System EPM on the lead program had gone quiet: weeks between replies, every channel tried. The GSM was late on every deliverable, across every program, every week. No title gave me authority over either. So I built what I had: a documentation pattern, clean escalation to leadership when silence became a schedule risk, and a dashboard that made accountability gaps impossible to ignore. When the EPM changed mid-rotation, I rebuilt the working relationship with the incoming EPM in weeks and kept the program on track.</div>
+      <div class="moment-body">Three programs, eight global SKUs. The System EPM on the lead program had gone quiet: weeks between replies, every channel tried. The Global Supplier Manager (GSM) was late on every deliverable, across every program, every week. No title gave me authority over either. So I built what I had: a documentation pattern, clean escalation to leadership when silence became a schedule risk, and a dashboard that made accountability gaps impossible to ignore. When the EPM changed mid-rotation, I rebuilt the working relationship with the incoming EPM in weeks and kept the program on track.</div>
       <div class="moment-kicker">You can't mandate accountability without authority. You can make the cost of silence visible.</div>
     </div>
 
@@ -1571,7 +1576,7 @@
     </div>
     <div class="stat-card teal reveal" data-roles="pm">
       <div class="stat-num">55k+</div>
-      <div class="stat-desc">characters of PM output from 342 keystrokes</div>
+      <div class="stat-desc">characters of PM documentation per week, generated by a 342-entry keystroke shorthand library built for this work</div>
     </div>
     <div class="stat-card light reveal" data-roles="pm cos">
       <div class="stat-num">3</div>
